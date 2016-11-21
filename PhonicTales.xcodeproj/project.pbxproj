@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1A2B7161DDE8E6F004B8B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */; };
+		F1A2B7181DDE8E6F004B8B78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7171DDE8E6F004B8B78 /* ViewController.swift */; };
+		F1A2B71B1DDE8E6F004B8B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */; };
+		F1A2B71E1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */; };
+		F1A2B7201DDE8E6F004B8B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */; };
+		F1A2B7231DDE8E6F004B8B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B7211DDE8E6F004B8B78 /* LaunchScreen.storyboard */; };
+		F1A2B72E1DDE8E6F004B8B78 /* PhonicTalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B72D1DDE8E6F004B8B78 /* PhonicTalesTests.swift */; };
+		F1A2B7391DDE8E6F004B8B78 /* PhonicTalesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7381DDE8E6F004B8B78 /* PhonicTalesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A2B72A1DDE8E6F004B8B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A2B70A1DDE8E6E004B8B78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A2B7111DDE8E6E004B8B78;
+			remoteInfo = PhonicTales;
+		};
+		F1A2B7351DDE8E6F004B8B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A2B70A1DDE8E6E004B8B78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A2B7111DDE8E6E004B8B78;
+			remoteInfo = PhonicTales;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1A2B7121DDE8E6F004B8B78 /* PhonicTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1A2B7171DDE8E6F004B8B78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1A2B71A1DDE8E6F004B8B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1A2B71D1DDE8E6F004B8B78 /* PhonicTales.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhonicTales.xcdatamodel; sourceTree = "<group>"; };
+		F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1A2B7221DDE8E6F004B8B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1A2B7241DDE8E6F004B8B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A2B7291DDE8E6F004B8B78 /* PhonicTalesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonicTalesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A2B72D1DDE8E6F004B8B78 /* PhonicTalesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicTalesTests.swift; sourceTree = "<group>"; };
+		F1A2B72F1DDE8E6F004B8B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A2B7341DDE8E6F004B8B78 /* PhonicTalesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonicTalesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A2B7381DDE8E6F004B8B78 /* PhonicTalesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicTalesUITests.swift; sourceTree = "<group>"; };
+		F1A2B73A1DDE8E6F004B8B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A2B70F1DDE8E6E004B8B78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A2B7261DDE8E6F004B8B78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A2B7311DDE8E6F004B8B78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1A2B7091DDE8E6E004B8B78 = {
+			isa = PBXGroup;
+			children = (
+				F1A2B7141DDE8E6F004B8B78 /* PhonicTales */,
+				F1A2B72C1DDE8E6F004B8B78 /* PhonicTalesTests */,
+				F1A2B7371DDE8E6F004B8B78 /* PhonicTalesUITests */,
+				F1A2B7131DDE8E6F004B8B78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A2B7131DDE8E6F004B8B78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2B7121DDE8E6F004B8B78 /* PhonicTales.app */,
+				F1A2B7291DDE8E6F004B8B78 /* PhonicTalesTests.xctest */,
+				F1A2B7341DDE8E6F004B8B78 /* PhonicTalesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A2B7141DDE8E6F004B8B78 /* PhonicTales */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */,
+				F1A2B7171DDE8E6F004B8B78 /* ViewController.swift */,
+				F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */,
+				F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */,
+				F1A2B7211DDE8E6F004B8B78 /* LaunchScreen.storyboard */,
+				F1A2B7241DDE8E6F004B8B78 /* Info.plist */,
+				F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */,
+			);
+			path = PhonicTales;
+			sourceTree = "<group>";
+		};
+		F1A2B72C1DDE8E6F004B8B78 /* PhonicTalesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2B72D1DDE8E6F004B8B78 /* PhonicTalesTests.swift */,
+				F1A2B72F1DDE8E6F004B8B78 /* Info.plist */,
+			);
+			path = PhonicTalesTests;
+			sourceTree = "<group>";
+		};
+		F1A2B7371DDE8E6F004B8B78 /* PhonicTalesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2B7381DDE8E6F004B8B78 /* PhonicTalesUITests.swift */,
+				F1A2B73A1DDE8E6F004B8B78 /* Info.plist */,
+			);
+			path = PhonicTalesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A2B7111DDE8E6E004B8B78 /* PhonicTales */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A2B73D1DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTales" */;
+			buildPhases = (
+				F1A2B70E1DDE8E6E004B8B78 /* Sources */,
+				F1A2B70F1DDE8E6E004B8B78 /* Frameworks */,
+				F1A2B7101DDE8E6E004B8B78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhonicTales;
+			productName = PhonicTales;
+			productReference = F1A2B7121DDE8E6F004B8B78 /* PhonicTales.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A2B7281DDE8E6F004B8B78 /* PhonicTalesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A2B7401DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTalesTests" */;
+			buildPhases = (
+				F1A2B7251DDE8E6F004B8B78 /* Sources */,
+				F1A2B7261DDE8E6F004B8B78 /* Frameworks */,
+				F1A2B7271DDE8E6F004B8B78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A2B72B1DDE8E6F004B8B78 /* PBXTargetDependency */,
+			);
+			name = PhonicTalesTests;
+			productName = PhonicTalesTests;
+			productReference = F1A2B7291DDE8E6F004B8B78 /* PhonicTalesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A2B7331DDE8E6F004B8B78 /* PhonicTalesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A2B7431DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTalesUITests" */;
+			buildPhases = (
+				F1A2B7301DDE8E6F004B8B78 /* Sources */,
+				F1A2B7311DDE8E6F004B8B78 /* Frameworks */,
+				F1A2B7321DDE8E6F004B8B78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A2B7361DDE8E6F004B8B78 /* PBXTargetDependency */,
+			);
+			name = PhonicTalesUITests;
+			productName = PhonicTalesUITests;
+			productReference = F1A2B7341DDE8E6F004B8B78 /* PhonicTalesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A2B70A1DDE8E6E004B8B78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Caroline Davis";
+				TargetAttributes = {
+					F1A2B7111DDE8E6E004B8B78 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2UNXUT4D3C;
+						ProvisioningStyle = Automatic;
+					};
+					F1A2B7281DDE8E6F004B8B78 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2UNXUT4D3C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1A2B7111DDE8E6E004B8B78;
+					};
+					F1A2B7331DDE8E6F004B8B78 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2UNXUT4D3C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1A2B7111DDE8E6E004B8B78;
+					};
+				};
+			};
+			buildConfigurationList = F1A2B70D1DDE8E6E004B8B78 /* Build configuration list for PBXProject "PhonicTales" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A2B7091DDE8E6E004B8B78;
+			productRefGroup = F1A2B7131DDE8E6F004B8B78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1A2B7111DDE8E6E004B8B78 /* PhonicTales */,
+				F1A2B7281DDE8E6F004B8B78 /* PhonicTalesTests */,
+				F1A2B7331DDE8E6F004B8B78 /* PhonicTalesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A2B7101DDE8E6E004B8B78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A2B7231DDE8E6F004B8B78 /* LaunchScreen.storyboard in Resources */,
+				F1A2B7201DDE8E6F004B8B78 /* Assets.xcassets in Resources */,
+				F1A2B71B1DDE8E6F004B8B78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A2B7271DDE8E6F004B8B78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A2B7321DDE8E6F004B8B78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A2B70E1DDE8E6E004B8B78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A2B7181DDE8E6F004B8B78 /* ViewController.swift in Sources */,
+				F1A2B7161DDE8E6F004B8B78 /* AppDelegate.swift in Sources */,
+				F1A2B71E1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A2B7251DDE8E6F004B8B78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A2B72E1DDE8E6F004B8B78 /* PhonicTalesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A2B7301DDE8E6F004B8B78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A2B7391DDE8E6F004B8B78 /* PhonicTalesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A2B72B1DDE8E6F004B8B78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A2B7111DDE8E6E004B8B78 /* PhonicTales */;
+			targetProxy = F1A2B72A1DDE8E6F004B8B78 /* PBXContainerItemProxy */;
+		};
+		F1A2B7361DDE8E6F004B8B78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A2B7111DDE8E6E004B8B78 /* PhonicTales */;
+			targetProxy = F1A2B7351DDE8E6F004B8B78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A2B71A1DDE8E6F004B8B78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1A2B7211DDE8E6F004B8B78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A2B7221DDE8E6F004B8B78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1A2B73B1DDE8E6F004B8B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A2B73C1DDE8E6F004B8B78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A2B73E1DDE8E6F004B8B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UNXUT4D3C;
+				INFOPLIST_FILE = PhonicTales/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTales;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1A2B73F1DDE8E6F004B8B78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UNXUT4D3C;
+				INFOPLIST_FILE = PhonicTales/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTales;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F1A2B7411DDE8E6F004B8B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2UNXUT4D3C;
+				INFOPLIST_FILE = PhonicTalesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTalesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhonicTales.app/PhonicTales";
+			};
+			name = Debug;
+		};
+		F1A2B7421DDE8E6F004B8B78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2UNXUT4D3C;
+				INFOPLIST_FILE = PhonicTalesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTalesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhonicTales.app/PhonicTales";
+			};
+			name = Release;
+		};
+		F1A2B7441DDE8E6F004B8B78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2UNXUT4D3C;
+				INFOPLIST_FILE = PhonicTalesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTalesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PhonicTales;
+			};
+			name = Debug;
+		};
+		F1A2B7451DDE8E6F004B8B78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2UNXUT4D3C;
+				INFOPLIST_FILE = PhonicTalesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTalesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PhonicTales;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A2B70D1DDE8E6E004B8B78 /* Build configuration list for PBXProject "PhonicTales" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A2B73B1DDE8E6F004B8B78 /* Debug */,
+				F1A2B73C1DDE8E6F004B8B78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A2B73D1DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTales" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A2B73E1DDE8E6F004B8B78 /* Debug */,
+				F1A2B73F1DDE8E6F004B8B78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1A2B7401DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTalesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A2B7411DDE8E6F004B8B78 /* Debug */,
+				F1A2B7421DDE8E6F004B8B78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1A2B7431DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTalesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A2B7441DDE8E6F004B8B78 /* Debug */,
+				F1A2B7451DDE8E6F004B8B78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1A2B71D1DDE8E6F004B8B78 /* PhonicTales.xcdatamodel */,
+			);
+			currentVersion = F1A2B71D1DDE8E6F004B8B78 /* PhonicTales.xcdatamodel */;
+			path = PhonicTales.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1A2B70A1DDE8E6E004B8B78 /* Project object */;
+}
