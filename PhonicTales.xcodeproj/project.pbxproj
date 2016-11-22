@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F1A2B7161DDE8E6F004B8B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */; };
-		F1A2B7181DDE8E6F004B8B78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7171DDE8E6F004B8B78 /* ViewController.swift */; };
+		F1A2B7181DDE8E6F004B8B78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7171DDE8E6F004B8B78 /* LoginViewController.swift */; };
 		F1A2B71B1DDE8E6F004B8B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */; };
 		F1A2B71E1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */; };
 		F1A2B7201DDE8E6F004B8B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */; };
 		F1A2B7231DDE8E6F004B8B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B7211DDE8E6F004B8B78 /* LaunchScreen.storyboard */; };
 		F1A2B72E1DDE8E6F004B8B78 /* PhonicTalesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B72D1DDE8E6F004B8B78 /* PhonicTalesTests.swift */; };
 		F1A2B7391DDE8E6F004B8B78 /* PhonicTalesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7381DDE8E6F004B8B78 /* PhonicTalesUITests.swift */; };
+		F1C87C041DE3D7BB00CAF365 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C031DE3D7BB00CAF365 /* HomeViewController.swift */; };
+		F1C87C061DE3D94B00CAF365 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C051DE3D94B00CAF365 /* SaveViewController.swift */; };
+		F1C87C081DE3D9B500CAF365 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C071DE3D9B500CAF365 /* TemplateViewController.swift */; };
+		F1C87C0A1DE3D9FD00CAF365 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C091DE3D9FD00CAF365 /* QuestionsViewController.swift */; };
+		F1C87C0C1DE3DAAA00CAF365 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C0B1DE3DAAA00CAF365 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,7 @@
 /* Begin PBXFileReference section */
 		F1A2B7121DDE8E6F004B8B78 /* PhonicTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1A2B7171DDE8E6F004B8B78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1A2B7171DDE8E6F004B8B78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F1A2B71A1DDE8E6F004B8B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1A2B71D1DDE8E6F004B8B78 /* PhonicTales.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhonicTales.xcdatamodel; sourceTree = "<group>"; };
 		F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		F1A2B7341DDE8E6F004B8B78 /* PhonicTalesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonicTalesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A2B7381DDE8E6F004B8B78 /* PhonicTalesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicTalesUITests.swift; sourceTree = "<group>"; };
 		F1A2B73A1DDE8E6F004B8B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1C87C031DE3D7BB00CAF365 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F1C87C051DE3D94B00CAF365 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		F1C87C071DE3D9B500CAF365 /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
+		F1C87C091DE3D9FD00CAF365 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		F1C87C0B1DE3DAAA00CAF365 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,12 @@
 		F1A2B7141DDE8E6F004B8B78 /* PhonicTales */ = {
 			isa = PBXGroup;
 			children = (
-				F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */,
-				F1A2B7171DDE8E6F004B8B78 /* ViewController.swift */,
-				F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */,
+				F1C87C001DE3C48300CAF365 /* Controller */,
+				F1C87BFF1DE3C47700CAF365 /* View */,
+				F1C87BFE1DE3C47100CAF365 /* Model */,
 				F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */,
 				F1A2B7211DDE8E6F004B8B78 /* LaunchScreen.storyboard */,
 				F1A2B7241DDE8E6F004B8B78 /* Info.plist */,
-				F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */,
 			);
 			path = PhonicTales;
 			sourceTree = "<group>";
@@ -126,6 +135,36 @@
 				F1A2B73A1DDE8E6F004B8B78 /* Info.plist */,
 			);
 			path = PhonicTalesUITests;
+			sourceTree = "<group>";
+		};
+		F1C87BFE1DE3C47100CAF365 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */,
+				F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F1C87BFF1DE3C47700CAF365 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F1C87C001DE3C48300CAF365 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1C87C0B1DE3DAAA00CAF365 /* PlaySoundsViewController.swift */,
+				F1A2B7171DDE8E6F004B8B78 /* LoginViewController.swift */,
+				F1C87C031DE3D7BB00CAF365 /* HomeViewController.swift */,
+				F1C87C051DE3D94B00CAF365 /* SaveViewController.swift */,
+				F1C87C071DE3D9B500CAF365 /* TemplateViewController.swift */,
+				F1C87C091DE3D9FD00CAF365 /* QuestionsViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1A2B7181DDE8E6F004B8B78 /* ViewController.swift in Sources */,
+				F1A2B7181DDE8E6F004B8B78 /* LoginViewController.swift in Sources */,
+				F1C87C0A1DE3D9FD00CAF365 /* QuestionsViewController.swift in Sources */,
+				F1C87C0C1DE3DAAA00CAF365 /* PlaySoundsViewController.swift in Sources */,
+				F1C87C061DE3D94B00CAF365 /* SaveViewController.swift in Sources */,
+				F1C87C081DE3D9B500CAF365 /* TemplateViewController.swift in Sources */,
 				F1A2B7161DDE8E6F004B8B78 /* AppDelegate.swift in Sources */,
 				F1A2B71E1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld in Sources */,
+				F1C87C041DE3D7BB00CAF365 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -436,6 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.carolinedavis.PhonicTales;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -516,6 +562,7 @@
 				F1A2B73F1DDE8E6F004B8B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1A2B7401DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTalesTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +571,7 @@
 				F1A2B7421DDE8E6F004B8B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1A2B7431DDE8E6F004B8B78 /* Build configuration list for PBXNativeTarget "PhonicTalesUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +580,7 @@
 				F1A2B7451DDE8E6F004B8B78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
