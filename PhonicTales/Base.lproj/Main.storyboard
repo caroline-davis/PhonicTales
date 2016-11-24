@@ -54,7 +54,7 @@
         <!--Home View Controller-->
         <scene sceneID="A5N-ui-aiI">
             <objects>
-                <viewController id="Tcb-iP-RDg" customClass="HomeViewController" customModule="PhonicTales" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="Tcb-iP-RDg" customClass="HomeViewController" customModule="PhonicTales" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jpu-Qv-ulv"/>
                         <viewControllerLayoutGuide type="bottom" id="Hae-ye-8gI"/>

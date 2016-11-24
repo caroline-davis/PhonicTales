@@ -1,0 +1,6 @@
+framework module Pods_PhonicTales {
+  umbrella header "Pods-PhonicTales-umbrella.h"
+
+  export *
+  module * { export * }
+}

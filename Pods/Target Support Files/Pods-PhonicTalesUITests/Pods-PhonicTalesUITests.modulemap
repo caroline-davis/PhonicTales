@@ -1,0 +1,6 @@
+framework module Pods_PhonicTalesUITests {
+  umbrella header "Pods-PhonicTalesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
