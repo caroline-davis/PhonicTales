@@ -10,6 +10,7 @@ import UIKit
 
 class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+
     var savedTales: [String] = ["hi", "pie", "man"]
     
     // with the core data will be var savedTales: [SavedTales] = []
@@ -20,6 +21,12 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // Adding black logout button to top
+        let testUIBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem  = testUIBarButtonItem
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+
 
     }
     
