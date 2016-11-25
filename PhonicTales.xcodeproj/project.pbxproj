@@ -66,6 +66,7 @@
 		F1A2B7341DDE8E6F004B8B78 /* PhonicTalesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonicTalesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A2B7381DDE8E6F004B8B78 /* PhonicTalesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonicTalesUITests.swift; sourceTree = "<group>"; };
 		F1A2B73A1DDE8E6F004B8B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A76BBF1DE7D28D001CA929 /* PhonicTales.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhonicTales.entitlements; sourceTree = "<group>"; };
 		F1C87C031DE3D7BB00CAF365 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F1C87C051DE3D94B00CAF365 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		F1C87C071DE3D9B500CAF365 /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 		F1A2B7141DDE8E6F004B8B78 /* PhonicTales */ = {
 			isa = PBXGroup;
 			children = (
+				F1A76BBF1DE7D28D001CA929 /* PhonicTales.entitlements */,
 				F1C87C001DE3C48300CAF365 /* Controller */,
 				F1C87BFF1DE3C47700CAF365 /* View */,
 				F1C87BFE1DE3C47100CAF365 /* Model */,
@@ -286,6 +288,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2UNXUT4D3C;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					F1A2B7281DDE8E6F004B8B78 = {
 						CreatedOnToolsVersion = 8.0;
@@ -651,6 +658,7 @@
 			baseConfigurationReference = 0ADFB8DF4F1F3CA55AA0FF3D /* Pods-PhonicTales.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhonicTales/PhonicTales.entitlements;
 				DEVELOPMENT_TEAM = 2UNXUT4D3C;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = "";
 				INFOPLIST_FILE = PhonicTales/Info.plist;
@@ -667,6 +675,7 @@
 			baseConfigurationReference = 7B1DF77C8A68895C72C45A0F /* Pods-PhonicTales.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhonicTales/PhonicTales.entitlements;
 				DEVELOPMENT_TEAM = 2UNXUT4D3C;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = "";
 				INFOPLIST_FILE = PhonicTales/Info.plist;

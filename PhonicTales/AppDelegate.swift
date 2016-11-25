@@ -8,16 +8,22 @@
 
 import UIKit
 import CoreData
+import FacebookCore
+import FacebookLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        let handled = SDKApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        return handled
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        let handled = SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
+        return handled
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

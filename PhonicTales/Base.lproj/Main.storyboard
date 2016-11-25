@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xtg-eU-BN3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -16,29 +16,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please login to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2l-ie-0Hf">
-                                <frame key="frameInset" minX="90" minY="495" width="176" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Create your own personalised audio story" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyo-2E-srG">
+                                <frame key="frameInset" minX="79" minY="356" width="257" height="54.666666666666686"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyc-SO-jBJ">
-                                <frame key="frameInset" minX="145" minY="535" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FB LOGIN"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-Mb-6xV">
-                                <frame key="frameInset" minX="51" minY="57" width="273" height="273"/>
+                                <frame key="frameInset" minX="68" minY="69" width="279" height="279"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create your own personalised audio story" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyo-2E-srG">
-                                <frame key="frameInset" minX="61" minY="350" width="235" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please login to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2l-ie-0Hf">
+                                <frame key="frameInset" minX="120" minY="470" width="174" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -49,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="252" y="115.59220389805098"/>
+            <point key="canvasLocation" x="250.27173913043481" y="114.49275362318842"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="A5N-ui-aiI">
@@ -60,61 +55,51 @@
                         <viewControllerLayoutGuide type="bottom" id="Hae-ye-8gI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="98w-tj-e8D">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Guz-px-iLA">
-                                <frame key="frameInset" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="HOME" id="zTm-2R-kjD">
-                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="hq4-Zv-8ir">
-                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-ii-Fx0">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="242" id="GgT-KK-AMc"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ji8-vX-jKL">
-                                <frame key="frameInset" minX="105" minY="446" width="178" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
-                                <state key="normal" title="Hear Saved Tales">
-                                    <color key="titleColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Nb6-3h-KPX" kind="show" id="Ft6-KE-jnW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-Hf-te5">
-                                <frame key="frameInset" minX="99" minY="364" width="191" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
-                                <state key="normal" title="Create a New Tale">
-                                    <color key="titleColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="UVQ-fE-ZOx" kind="show" id="uj2-BT-MgP"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7dm-vM-iAu">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zYK-U6-OLQ">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-ii-Fx0"/>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="Z5W-KA-TcE">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-Hf-te5">
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
+                                                <state key="normal" title="Create a New Tale">
+                                                    <color key="titleColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="UVQ-fE-ZOx" kind="show" id="uj2-BT-MgP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ji8-vX-jKL">
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
+                                                <state key="normal" title="Hear Saved Tales">
+                                                    <color key="titleColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Nb6-3h-KPX" kind="show" id="Ft6-KE-jnW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="IV0-ii-Fx0" firstAttribute="leading" secondItem="98w-tj-e8D" secondAttribute="leadingMargin" constant="59" id="F6L-ZD-QuS"/>
-                            <constraint firstItem="IV0-ii-Fx0" firstAttribute="centerX" secondItem="98w-tj-e8D" secondAttribute="centerX" id="IFa-gl-VDz"/>
-                            <constraint firstItem="IV0-ii-Fx0" firstAttribute="top" secondItem="Jpu-Qv-ulv" secondAttribute="bottom" constant="32" id="NtM-dk-EI9"/>
+                            <constraint firstItem="7dm-vM-iAu" firstAttribute="leading" secondItem="98w-tj-e8D" secondAttribute="leadingMargin" id="7Fm-3f-MsK"/>
+                            <constraint firstItem="Hae-ye-8gI" firstAttribute="top" secondItem="7dm-vM-iAu" secondAttribute="bottom" constant="100" id="Rq9-dv-DVf"/>
+                            <constraint firstItem="7dm-vM-iAu" firstAttribute="top" secondItem="Jpu-Qv-ulv" secondAttribute="bottom" constant="8" symbolic="YES" id="Ubz-E7-HOA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7dm-vM-iAu" secondAttribute="trailing" id="YIC-rZ-IHl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="k3f-jK-Vux">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="xaF-rc-m0a">
-                            <color key="tintColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="k3f-jK-Vux"/>
                     <connections>
                         <outlet property="createNew" destination="Hfb-Hf-te5" id="AvK-Jq-kwV"/>
                         <outlet property="saved" destination="Ji8-vX-jKL" id="Ufb-h6-GGc"/>
@@ -149,16 +134,20 @@
                         <viewControllerLayoutGuide type="bottom" id="fp7-SO-M1a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OpU-82-JMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m03-K1-j4V" userLabel="Root Stack View">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Template" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJy-86-Zny">
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="38"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zMf-lj-86h">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Template" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJy-86-Zny">
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DaD-0D-amn" userLabel="Row1 Stack View">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeQ-DF-Lad">
@@ -226,15 +215,15 @@
                         <viewControllerLayoutGuide type="bottom" id="3tt-Ft-cD1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="78e-hk-CMs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mic" translatesAutoresizingMaskIntoConstraints="NO" id="xav-Wd-Mp8">
-                                <frame key="frameInset" minY="114" width="375" height="214"/>
+                                <frame key="frameInset" minX="20" minY="144" width="375" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ep-pE-42d">
-                                <frame key="frameInset" minX="135" minY="403" width="105" height="105"/>
+                                <frame key="frameInset" minX="155" minY="433" width="105" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Stop"/>
                             </button>
@@ -255,7 +244,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kZs-CK-W2O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0BB-9X-QRb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -273,7 +262,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wR5-21-urJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sqy-01-bsF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Phonic Tales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDz-Cq-43X">
@@ -310,7 +299,7 @@
         <image name="FoodIcon" width="104" height="104"/>
         <image name="GhostIcon" width="103" height="104"/>
         <image name="HeartIcon" width="104" height="104"/>
-        <image name="Logo" width="625" height="625"/>
+        <image name="Logo" width="300" height="300"/>
         <image name="Mic" width="53" height="175"/>
         <image name="PawIcon" width="104" height="104"/>
         <image name="Stop" width="105" height="105"/>

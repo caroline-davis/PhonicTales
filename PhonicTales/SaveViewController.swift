@@ -27,7 +27,6 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationItem.rightBarButtonItem  = testUIBarButtonItem
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
 
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
