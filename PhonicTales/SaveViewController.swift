@@ -22,10 +22,6 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.dataSource = self
         tableView.delegate = self
         
-        // Adding black logout button to top
-        let testUIBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: nil)
-        self.navigationItem.rightBarButtonItem  = testUIBarButtonItem
-        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
 
     }
     

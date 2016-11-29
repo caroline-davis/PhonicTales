@@ -23,6 +23,7 @@
 		F1C87C081DE3D9B500CAF365 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C071DE3D9B500CAF365 /* TemplateViewController.swift */; };
 		F1C87C0A1DE3D9FD00CAF365 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C091DE3D9FD00CAF365 /* QuestionsViewController.swift */; };
 		F1C87C0C1DE3DAAA00CAF365 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C87C0B1DE3DAAA00CAF365 /* PlaySoundsViewController.swift */; };
+		F1D30F8C1DEBE0F1001677D2 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D30F8B1DEBE0F1001677D2 /* Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		F1C87C071DE3D9B500CAF365 /* TemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		F1C87C091DE3D9FD00CAF365 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		F1C87C0B1DE3DAAA00CAF365 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		F1D30F8B1DEBE0F1001677D2 /* Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */,
+				F1D30F8B1DEBE0F1001677D2 /* Convenience.swift */,
 				F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */,
 			);
 			name = Model;
@@ -199,12 +202,12 @@
 		F1C87C001DE3C48300CAF365 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F1C87C0B1DE3DAAA00CAF365 /* PlaySoundsViewController.swift */,
 				F1A2B7171DDE8E6F004B8B78 /* LoginViewController.swift */,
 				F1C87C031DE3D7BB00CAF365 /* HomeViewController.swift */,
-				F1C87C051DE3D94B00CAF365 /* SaveViewController.swift */,
 				F1C87C071DE3D9B500CAF365 /* TemplateViewController.swift */,
 				F1C87C091DE3D9FD00CAF365 /* QuestionsViewController.swift */,
+				F1C87C0B1DE3DAAA00CAF365 /* PlaySoundsViewController.swift */,
+				F1C87C051DE3D94B00CAF365 /* SaveViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				F1C87C081DE3D9B500CAF365 /* TemplateViewController.swift in Sources */,
 				F1A2B7161DDE8E6F004B8B78 /* AppDelegate.swift in Sources */,
 				F1A2B71E1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld in Sources */,
+				F1D30F8C1DEBE0F1001677D2 /* Convenience.swift in Sources */,
 				F1C87C041DE3D7BB00CAF365 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
