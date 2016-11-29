@@ -17,14 +17,26 @@ class QuestionsViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
     
     let synthesizer = AVSpeechSynthesizer()
     var usersAnswers:[String] = []
-    
-    var text = "Yesterday I left my house and went for a walk with my pet <0>, named <1>, to buy some delicious <2>.  It was a <3> day so I decided to put on my best <4>. Little <1> and I <5> all the way to the store and saw a <6> along the way.  ,<1> chased the <6> into the store and the <6> broke a <7>. The <6> looked ANGRY and ran away. I apologised to the shopkeeper about the <7> and he told me it was okay because he had won <8> dollars that day and could pay for the repairs. I asked the shopkeeper for some <2> and headed off to the park with <1>. As I began to eat my <2> I saw the <6> sitting amongst the grass. I asked him to come over to share the <2>. He <9> over and declined the <2> and said “What am I a <0> ?”. The <6> was never seen again."
+    var text = Convenience.sharedInstance().text
+    var questions = Convenience.sharedInstance().questions
+    var questionIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.answer.delegate = self
+        pickOutQuestion()
     }
+
     
+    func pickOutQuestion() {
+        print(questions.count, questionIndex)
+        if questionIndex <= questions.count - 1 {
+            question.text = questions[questionIndex]
+            questionIndex += 1
+        }
+    }
+
+ 
     // when enter is pressed keyboard is dismissed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -34,6 +46,8 @@ class QuestionsViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
     // when user is finished with text, the word will be saved and inserted into array
     func textFieldDidEndEditing(_ textField: UITextField) {
         usersAnswers.append(textField.text!)
+        pickOutQuestion()
+        print(question)
         print(usersAnswers)
     }
     

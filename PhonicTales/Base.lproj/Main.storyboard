@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Create your own personalised audio story" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyo-2E-srG">
@@ -55,7 +55,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hae-ye-8gI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="98w-tj-e8D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7dm-vM-iAu">
@@ -134,7 +134,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fp7-SO-M1a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OpU-82-JMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m03-K1-j4V" userLabel="Root Stack View">
@@ -215,33 +215,39 @@
                         <viewControllerLayoutGuide type="bottom" id="3tt-Ft-cD1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="78e-hk-CMs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QUESTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-UQ-3OT">
-                                <frame key="frameInset" minX="158" minY="65" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yz4-td-JcO">
-                                <frame key="frameInset" minX="152" minY="157" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-z3-4wG">
-                                <frame key="frameInset" minX="177" minY="226" width="46" height="30"/>
+                                <frame key="frameInset" minX="164" minY="236" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="record" destination="HH2-1e-x24" eventType="touchUpInside" id="RR5-xQ-4H7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yz4-td-JcO">
+                                <frame key="frameInset" minX="29" minY="156" width="316" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-UQ-3OT">
+                                <frame key="frameInset" minX="13" minY="68" width="349" height="45"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yz4-td-JcO" firstAttribute="leading" secondItem="78e-hk-CMs" secondAttribute="leadingMargin" id="AaC-07-Rou"/>
+                            <constraint firstItem="mPI-UQ-3OT" firstAttribute="leading" secondItem="78e-hk-CMs" secondAttribute="leadingMargin" id="Zko-ij-xGu"/>
+                            <constraint firstItem="mPI-UQ-3OT" firstAttribute="top" secondItem="520-Os-6pc" secondAttribute="bottom" constant="48" id="bM4-kA-KXi"/>
+                            <constraint firstItem="yz4-td-JcO" firstAttribute="top" secondItem="520-Os-6pc" secondAttribute="bottom" constant="135" id="k5u-CL-D0b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yz4-td-JcO" secondAttribute="trailing" id="raS-XT-zNU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mPI-UQ-3OT" secondAttribute="trailing" id="zUt-at-NyA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answer" destination="yz4-td-JcO" id="V55-zT-cqC"/>
@@ -262,7 +268,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kZs-CK-W2O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0BB-9X-QRb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -280,7 +286,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wR5-21-urJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sqy-01-bsF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Phonic Tales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDz-Cq-43X">
