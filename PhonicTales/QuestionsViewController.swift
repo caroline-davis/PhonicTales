@@ -33,9 +33,11 @@ class QuestionsViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
         if questionIndex <= questions.count - 1 {
             question.text = questions[questionIndex]
             questionIndex += 1
+        } else if questionIndex >= questions.count - 1 {
+            let controller = self.storyboard!.instantiateViewController(withIdentifier: "PlaySoundsViewController")
+            self.present(controller, animated: true, completion: nil)
         }
     }
-
  
     // when enter is pressed keyboard is dismissed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -49,6 +51,7 @@ class QuestionsViewController: UIViewController, AVSpeechSynthesizerDelegate, UI
         pickOutQuestion()
         print(question)
         print(usersAnswers)
+        textField.text = ""
     }
     
     // plays text
