@@ -203,6 +203,7 @@
                         <outlet property="heart" destination="16q-Xs-f6u" id="R6V-pT-blb"/>
                         <outlet property="paw" destination="HeQ-DF-Lad" id="xMX-1K-3jX"/>
                         <outlet property="sword" destination="yfb-Gu-f2A" id="bdd-8l-IRE"/>
+                        <segue destination="HH2-1e-x24" kind="show" identifier="ButtonSegue" id="oN0-zd-vRt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8Y-R8-29r" userLabel="First Responder" sceneMemberID="firstResponder"/>

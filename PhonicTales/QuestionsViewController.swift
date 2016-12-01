@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionsViewController: UIViewController, UITextFieldDelegate {
+class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate{
     
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var question: UILabel!
@@ -18,13 +18,16 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        chooseStoryTemplate()
         self.answer.delegate = self
+        chooseStoryTemplate()
         pickOutQuestion()
+        
+        // clears text incase user goes back before saving phonic tale
+        Convenience.sharedInstance().usersAnswers = []
     }
     
     func chooseStoryTemplate(){
-        var selectedStory = Convenience.sharedInstance().selectedStory
+        let selectedStory = Convenience.sharedInstance().selectedStory
         
         if let storyChoice = Convenience.sharedInstance().storyTemplates[selectedStory] {
             if let storyText = storyChoice["text"] {
@@ -55,10 +58,16 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     
     // when user is finished with text, the word will be saved and inserted into array
     func textFieldDidEndEditing(_ textField: UITextField) {
-        Convenience.sharedInstance().usersAnswers.append(textField.text!)
-        pickOutQuestion()
-        textField.text = ""
+        if textField.text == "" {
+            // alert msg pops up if they forget to put in an answer
+            Convenience.sharedInstance().alertMessage(errorMessage: "Oops! You forgot to put in an answer", sender: self)
+            print ("its empty")
+        } else {
+            Convenience.sharedInstance().usersAnswers.append(textField.text!)
+            print(Convenience.sharedInstance().usersAnswers)
+            pickOutQuestion()
+            textField.text = ""
+        }
     }
     
-
 }

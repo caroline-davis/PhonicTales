@@ -20,7 +20,7 @@ class TemplateViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
     }
     
     @IBAction func buttonPushed (sender: UIButton) {
@@ -36,8 +36,8 @@ class TemplateViewController: UIViewController {
         default:
             break
         }
-        let controller = self.storyboard!.instantiateViewController(withIdentifier: "QuestionsViewController")
-        self.present(controller, animated: true, completion: nil)
+    self.performSegue(withIdentifier: "ButtonSegue", sender: UIButton.self)
 
     }
+    
 }
