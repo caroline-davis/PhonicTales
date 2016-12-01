@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
-class PlaySoundsViewController: UIViewController {
+class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
+    
+    @IBOutlet weak var sounds: UIButton!
+    
+    let synthesizer = AVSpeechSynthesizer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,5 +27,21 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // plays text
+    @IBAction func playSound(){
+        for (index, word) in Convenience.sharedInstance().usersAnswers.enumerated() {
+            Convenience.sharedInstance().text = Convenience.sharedInstance().text.replacingOccurrences(of: "<\(index)>", with: word)
+        }
+        recordedStory(text: Convenience.sharedInstance().text)
+    }
+    
+    // sets the playback
+    func recordedStory(text: String){
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.4
+        
+        self.synthesizer.speak(utterance)
+    }
 
 }

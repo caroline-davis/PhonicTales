@@ -218,14 +218,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-z3-4wG">
-                                <frame key="frameInset" minX="164" minY="236" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="record" destination="HH2-1e-x24" eventType="touchUpInside" id="RR5-xQ-4H7"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yz4-td-JcO">
                                 <frame key="frameInset" minX="29" minY="156" width="316" height="30"/>
                                 <nil key="textColor"/>
@@ -252,7 +244,6 @@
                     <connections>
                         <outlet property="answer" destination="yz4-td-JcO" id="V55-zT-cqC"/>
                         <outlet property="question" destination="mPI-UQ-3OT" id="NJx-nq-XHo"/>
-                        <outlet property="sounds" destination="gGs-z3-4wG" id="4gN-W6-Ax7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftx-gM-gK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -282,6 +273,9 @@
                                 <frame key="frameInset" minX="105" minY="363" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <action selector="playSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="dgx-41-Fvk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have finished your tale!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nr-0a-Dcz">
                                 <frame key="frameInset" minX="63" minY="146" width="249" height="26"/>
@@ -312,6 +306,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="sounds" destination="lSQ-Qr-DUo" id="2jv-5U-FNy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1T-ot-n9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
