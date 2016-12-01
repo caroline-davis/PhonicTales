@@ -14,18 +14,6 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var question: UILabel!
 
     var questions: [String] = []
-    
-    func chooseStoryTemplate(){
-        if let storyChoice = Convenience.sharedInstance().storyTemplates["Animal"]{
-            if let storyText = storyChoice["text"]{
-                Convenience.sharedInstance().text = storyText as! String
-            }
-            if let storyQuestions = storyChoice["questions"]{
-                questions = storyQuestions as! [String]
-            }
-        }
-    }
-
     var questionIndex = 0
     
     override func viewDidLoad() {
@@ -34,8 +22,20 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate {
         self.answer.delegate = self
         pickOutQuestion()
     }
-
     
+    func chooseStoryTemplate(){
+        var selectedStory = Convenience.sharedInstance().selectedStory
+        
+        if let storyChoice = Convenience.sharedInstance().storyTemplates[selectedStory] {
+            if let storyText = storyChoice["text"] {
+                Convenience.sharedInstance().text = storyText as! String
+            }
+            if let storyQuestions = storyChoice["questions"] {
+                questions = storyQuestions as! [String]
+            }
+        }
+    }
+
     func pickOutQuestion() {
         print(questions.count, questionIndex)
         if questionIndex <= questions.count - 1 {

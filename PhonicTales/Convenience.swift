@@ -16,7 +16,7 @@ class Convenience: UIViewController {
     
     var usersAnswers:[String] = []
     var text: String = ""
-    
+    var selectedStory = ""
   //story template text and questions
     var storyTemplates = [
         "Animal": [
