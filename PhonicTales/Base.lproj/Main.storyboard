@@ -168,6 +168,9 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Love" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16q-Xs-f6u">
                                                 <state key="normal" image="HeartIcon"/>
+                                                <connections>
+                                                    <action selector="buttonPushedWithSender:" destination="UVQ-fE-ZOx" eventType="touchUpInside" id="VEw-ls-MK6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -175,6 +178,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Ship" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikq-wd-tme">
                                                 <state key="normal" image="AnchorIcon"/>
+                                                <connections>
+                                                    <action selector="buttonPushedWithSender:" destination="UVQ-fE-ZOx" eventType="touchUpInside" id="OrO-0t-fGc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Ghost" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-8E-6L4">
                                                 <state key="normal" image="GhostIcon"/>
@@ -226,7 +232,7 @@
                                 <frame key="frameInset" minX="29" minY="156" width="316" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="28"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-UQ-3OT">
                                 <frame key="frameInset" minX="13" minY="68" width="349" height="45"/>

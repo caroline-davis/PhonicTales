@@ -36,7 +36,11 @@ class TemplateViewController: UIViewController {
         default:
             break
         }
-    self.performSegue(withIdentifier: "ButtonSegue", sender: UIButton.self)
+        
+        // replaces dispatch dispatch_async(dispatch_get_main_queue()) to make sure view is in correct queue.
+        DispatchQueue.main.async { () -> Void in
+            self.performSegue(withIdentifier: "ButtonSegue", sender: UIButton.self)
+        }
 
     }
     

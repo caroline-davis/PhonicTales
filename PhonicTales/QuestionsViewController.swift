@@ -49,6 +49,9 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
             self.present(controller, animated: true, completion: nil)
         }
     }
+    
+
+
  
     // when enter is pressed keyboard is dismissed
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -69,5 +72,6 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
             textField.text = ""
         }
     }
+    
     
 }
