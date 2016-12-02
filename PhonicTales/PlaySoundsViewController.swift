@@ -11,7 +11,8 @@ import AVFoundation
 
 class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
-    
+    @IBOutlet weak var homeButton: UIBarButtonItem!
+
     @IBOutlet weak var sounds: UIButton!
     
     let synthesizer = AVSpeechSynthesizer()
@@ -33,6 +34,7 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
             Convenience.sharedInstance().text = Convenience.sharedInstance().text.replacingOccurrences(of: "<\(index)>", with: word)
         }
         recordedStory(text: Convenience.sharedInstance().text)
+        getData()
     }
     
     // sets the playback
@@ -43,5 +45,38 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
         
         self.synthesizer.speak(utterance)
     }
+    
+    // getting the data ready to be saved
+    func getData(){
+        let currentDate = Date()
+        let completedStory = Convenience.sharedInstance().text
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let story = Story(context: context)
+        story.storyText = completedStory
+        story.storyCreationDate = currentDate as NSDate?
+        
+       //save the data to coredata
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+    }
+    
+    
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

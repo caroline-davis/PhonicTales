@@ -10,8 +10,8 @@ import UIKit
 
 class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
-    var savedTales: [String] = ["hi", "pie", "man"]
+    var savedTales: [Story] = []
+    
     
     // with the core data will be var savedTales: [SavedTales] = []
 
@@ -22,12 +22,11 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.dataSource = self
         tableView.delegate = self
         
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
         //get the data from coredata
-       // getData()
+        getData()
         
         // reload the tableview
         tableView.reloadData()
@@ -37,44 +36,54 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return savedTales.count
     }
     
+   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var newDate = ""
         let cell = UITableViewCell()
         let tale = savedTales[indexPath.row]
-         cell.textLabel?.text = tale
+        
+        func dateFormatChanger(date:NSDate) {
+            let date = NSDate()
+            var dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd-MM-yyyy"
+            var newDateString = dateFormatter.string(from: date as Date)
+            newDate = newDateString
+        }
+        dateFormatChanger(date: tale.storyCreationDate!)
+         cell.textLabel?.text = newDate
         return cell
     }
  
 //    This is for gathering the coredata
-//    func getData() {
-//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//        
-//        do
-//        {
-//            tasks = try context.fetch(Task.fetchRequest())
-//        } catch {
-//            print("Fetching Failed")
-//        }
-//    }
+    func getData() {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do
+        {
+            savedTales = try context.fetch(Story.fetchRequest())
+        } catch {
+            print("Fetching Failed")
+        }
+    }
 
     
     // This is for the delete swiper using core data on the table
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-//        
-//        if editingStyle == .delete {
-//            let task = tasks[indexPath.row]
-//            context.delete(task)
-//            (UIApplication.shared.delegate as! AppDelegate).saveContext()
-//            do
-//            {
-//                tasks = try context.fetch(Task.fetchRequest())
-//            } catch {
-//                print("Fetching Failed")
-//            }
-//        }
-//        
-//        tableView.reloadData()
-//    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        if editingStyle == .delete {
+            let tale = savedTales[indexPath.row]
+            context.delete(tale)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            do
+            {
+                savedTales = try context.fetch(Story.fetchRequest())
+            } catch {
+                print("Fetching Failed")
+            }
+        }
+        
+        tableView.reloadData()
+    }
 
 
 

@@ -313,10 +313,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-Ej-oYB">
+                                <frame key="frameInset" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="HOME" id="0z2-un-c34">
+                                        <barButtonItem key="leftBarButtonItem" title="please take me home" id="Fn0-fI-RTr">
+                                            <connections>
+                                                <segue destination="Tcb-iP-RDg" kind="show" id="Ycv-JU-ebh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="homeButton" destination="Fn0-fI-RTr" id="T0V-E2-xN4"/>
                         <outlet property="sounds" destination="lSQ-Qr-DUo" id="2jv-5U-FNy"/>
                     </connections>
                 </viewController>
@@ -376,4 +390,7 @@
         <image name="Stop" width="105" height="105"/>
         <image name="SwordIcon" width="104" height="104"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ycv-JU-ebh"/>
+    </inferredMetricsTieBreakers>
 </document>
