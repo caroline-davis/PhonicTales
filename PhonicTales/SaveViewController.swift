@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
-class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AVSpeechSynthesizerDelegate {
     
     var savedTales: [Story] = []
+    let synthesizer = AVSpeechSynthesizer()
     
     
     // with the core data will be var savedTales: [SavedTales] = []
@@ -45,7 +47,7 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         func dateFormatChanger(date:NSDate) {
             let date = NSDate()
             var dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd-MM-yyyy"
+            dateFormatter.dateFormat = "dd-MM-yyyy, hh:mm a zz"
             var newDateString = dateFormatter.string(from: date as Date)
             newDate = newDateString
         }
@@ -84,7 +86,17 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.reloadData()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tale = savedTales[indexPath.row]
+        
+        let utterance = AVSpeechUtterance(string: tale.storyText!)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.4
+        
+        self.synthesizer.speak(utterance)
 
+    }
 
 
 }

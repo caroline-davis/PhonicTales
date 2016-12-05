@@ -53,16 +53,10 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
 
 
  
-    // when enter is pressed keyboard is dismissed
+    // alert msg pops up if they forget to put in an answer
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    // when user is finished with text, the word will be saved and inserted into array
-    func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.text == "" {
-            // alert msg pops up if they forget to put in an answer
+            
             Convenience.sharedInstance().alertMessage(errorMessage: "Oops! You forgot to put in an answer", sender: self)
             print ("its empty")
         } else {
@@ -71,7 +65,10 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
             pickOutQuestion()
             textField.text = ""
         }
+
+        return false
     }
+    
     
     
 }
