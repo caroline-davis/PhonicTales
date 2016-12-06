@@ -17,9 +17,10 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // Adding black logout button to top
-        let rightUIBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: nil)
-        self.navigationItem.rightBarButtonItem  = rightUIBarButtonItem
-        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        let leftUIBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem  = leftUIBarButtonItem
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.black
     }
 }

@@ -12,30 +12,39 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
     @IBOutlet weak var homeButton: UIBarButtonItem!
-
     @IBOutlet weak var sounds: UIButton!
+    @IBOutlet weak var stop: UIButton!
+    @IBOutlet weak var navBar: UINavigationBar!
     
+
     let synthesizer = AVSpeechSynthesizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        getData()
     }
     
-    // plays text
+    // makes the nav bar thicker
+    override func viewWillAppear(_ animated: Bool) {
+        self.navBar.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 60.00)
+    }
+
+    
+    // plays text as sound
     @IBAction func playSound(){
         for (index, word) in Convenience.sharedInstance().usersAnswers.enumerated() {
             Convenience.sharedInstance().text = Convenience.sharedInstance().text.replacingOccurrences(of: "<\(index)>", with: word)
         }
         recordedStory(text: Convenience.sharedInstance().text)
-        getData()
     }
+    
+    // stops text as sound
+    @IBAction func stopSounds(){
+        synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
+    }
+    
+   // synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
+   
     
     // sets the playback
     func recordedStory(text: String){
