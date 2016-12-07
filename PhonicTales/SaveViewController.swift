@@ -45,9 +45,8 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let tale = savedTales[indexPath.row]
         
         func dateFormatChanger(date:NSDate) {
-            let date = NSDate()
             var dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd-MM-yyyy, hh:mm a zz"
+            dateFormatter.dateFormat = "dd-MM-yyyy, hh:mm a"
             var newDateString = dateFormatter.string(from: date as Date)
             newDate = newDateString
         }
