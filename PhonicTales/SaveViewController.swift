@@ -14,15 +14,19 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var savedTales: [Story] = []
     let synthesizer = AVSpeechSynthesizer()
     
+    var tableCell = "Cell"
     
     // with the core data will be var savedTales: [SavedTales] = []
 
     @IBOutlet weak var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        
+        // The tableview cell class and its reuse identifier name
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: tableCell)
         
     }
     
@@ -40,8 +44,9 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  
         var newDate = ""
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.tableCell)
         let tale = savedTales[indexPath.row]
         
         func dateFormatChanger(date:NSDate) {
@@ -51,8 +56,12 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
             newDate = newDateString
         }
         dateFormatChanger(date: tale.storyCreationDate!)
-         cell.textLabel?.text = newDate
-        return cell
+         cell?.textLabel?.text = newDate
+         cell?.imageView?.image = #imageLiteral(resourceName: "TrophyIcon")
+        
+
+        
+        return cell!
     }
  
 //    This is for gathering the coredata
