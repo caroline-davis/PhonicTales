@@ -12,7 +12,6 @@ import AVFoundation
 class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AVSpeechSynthesizerDelegate {
     
     var savedTales: [Story] = []
-    let synthesizer = AVSpeechSynthesizer()
     
     var tableCell = "Cell"
     
@@ -50,16 +49,14 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let tale = savedTales[indexPath.row]
         
         func dateFormatChanger(date:NSDate) {
-            var dateFormatter = DateFormatter()
+            let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "dd-MM-yyyy, hh:mm a"
-            var newDateString = dateFormatter.string(from: date as Date)
+            let newDateString = dateFormatter.string(from: date as Date)
             newDate = newDateString
         }
         dateFormatChanger(date: tale.storyCreationDate!)
          cell?.textLabel?.text = newDate
-         cell?.imageView?.image = #imageLiteral(resourceName: "TrophyIcon")
-        
-
+         cell?.imageView?.image = #imageLiteral(resourceName: "BookIcon")
         
         return cell!
     }
@@ -96,15 +93,17 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
         let tale = savedTales[indexPath.row]
+        Convenience.sharedInstance().text = tale.storyText!
         
-        let utterance = AVSpeechUtterance(string: tale.storyText!)
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        utterance.rate = 0.4
-        
-        self.synthesizer.speak(utterance)
+        let nextViewController = (self.storyboard?.instantiateViewController(withIdentifier: "PlaySavedSoundViewController"))! as UIViewController
+        self.navigationController?.pushViewController(nextViewController, animated: true)
 
-    }
+      
+        }
+
 
 
 }

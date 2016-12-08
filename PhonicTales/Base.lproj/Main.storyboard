@@ -329,6 +329,7 @@
                                                 <segue destination="xtg-eU-BN3" kind="show" id="gHM-c3-u0m"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="Smh-0k-Vy6"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -351,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1T-ot-n9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3916" y="373.76311844077964"/>
+            <point key="canvasLocation" x="3929" y="-114"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="Nit-AC-P1Y">
@@ -415,6 +416,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fOg-ie-KNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2501.5999999999999" y="552.77361319340332"/>
+        </scene>
+        <!--Play Saved Sound View Controller-->
+        <scene sceneID="Fk9-zH-CbL">
+            <objects>
+                <viewController storyboardIdentifier="PlaySavedSoundViewController" id="dLr-Qe-Zbe" customClass="PlaySavedSoundViewController" customModule="PhonicTales" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="01r-HQ-F7z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4J-3e-tix"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uep-ap-jce">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GY9-xS-KlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3209" y="553"/>
         </scene>
     </scenes>
     <resources>
