@@ -11,13 +11,16 @@ import AVFoundation
 
 class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegate {
 
+    @IBOutlet weak var play: UIButton!
+    @IBOutlet weak var stop: UIButton!
+    
     let synthesizer = AVSpeechSynthesizer()
     var text = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.text = Convenience.sharedInstance().text
-        recordedStory()
+        //print( self.text)
         
         // Do any additional setup after loading the view.
     }
@@ -31,6 +34,20 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
         
         self.synthesizer.speak(utterance)
     }
+    
+    // plays text as sound
+    @IBAction func playSound(){
+//        for (index, word) in Convenience.sharedInstance().usersAnswers.enumerated() {
+//            Convenience.sharedInstance().text = Convenience.sharedInstance().text.replacingOccurrences(of: "<\(index)>", with: word)
+//        }
+        recordedStory()
+    }
+    
+    // stops text as sound
+    @IBAction func stopSounds(){
+        synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
+    }
+
 
 
 }

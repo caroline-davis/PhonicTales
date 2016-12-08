@@ -300,7 +300,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play"/>
                                 <connections>
-                                    <action selector="playSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="dgx-41-Fvk"/>
+                                    <action selector="recordedStory" destination="PVW-8G-BTo" eventType="touchUpInside" id="pxi-fX-hu8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-ow-RxC">
@@ -428,8 +428,30 @@
                     <view key="view" contentMode="scaleToFill" id="uep-ap-jce">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-t6-WdK" userLabel="PlayButton">
+                                <frame key="frameInset" minX="75" minY="166" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Play"/>
+                                <connections>
+                                    <action selector="playSound" destination="dLr-Qe-Zbe" eventType="touchUpInside" id="b34-Id-bcm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ans-gt-ulT" userLabel="StopButton">
+                                <frame key="frameInset" minX="195" minY="166" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopSounds" destination="dLr-Qe-Zbe" eventType="touchUpInside" id="J7D-nl-YVY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="play" destination="3eM-t6-WdK" id="rLF-pA-Nm1"/>
+                        <outlet property="stop" destination="ans-gt-ulT" id="fER-4b-pLd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GY9-xS-KlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

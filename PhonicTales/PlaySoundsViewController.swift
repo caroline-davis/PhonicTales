@@ -28,14 +28,21 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         self.navBar.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 60.00)
     }
-
     
-    // plays text as sound
-    @IBAction func playSound(){
+    // add the users words into the string
+    func insertWords(){
         for (index, word) in Convenience.sharedInstance().usersAnswers.enumerated() {
             Convenience.sharedInstance().text = Convenience.sharedInstance().text.replacingOccurrences(of: "<\(index)>", with: word)
         }
-        recordedStory(text: Convenience.sharedInstance().text)
+    }
+   
+    // sets the playback and plays the text as sound
+    @IBAction func recordedStory(){
+        let utterance = AVSpeechUtterance(string: Convenience.sharedInstance().text)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.rate = 0.4
+        
+        self.synthesizer.speak(utterance)
     }
     
     // stops text as sound
@@ -43,22 +50,15 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
     
-   // synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
-   
-    
-    // sets the playback
-    func recordedStory(text: String){
-        let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        utterance.rate = 0.4
-        
-        self.synthesizer.speak(utterance)
-    }
+    // synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
+
     
     // getting the data ready to be saved
     func getData(){
+        insertWords()
         let currentDate = Date()
         let completedStory = Convenience.sharedInstance().text
+        print(completedStory)
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let story = Story(context: context)
