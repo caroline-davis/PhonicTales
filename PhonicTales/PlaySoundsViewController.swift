@@ -38,11 +38,7 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
    
     // sets the playback and plays the text as sound
     @IBAction func recordedStory(){
-        let utterance = AVSpeechUtterance(string: Convenience.sharedInstance().text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        utterance.rate = 0.4
-        
-        self.synthesizer.speak(utterance)
+        Convenience.sharedInstance().play(synthesizer: synthesizer)
     }
     
     // stops text as sound
@@ -50,7 +46,6 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
     
-    // synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
 
     
     // getting the data ready to be saved
@@ -58,7 +53,6 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
         insertWords()
         let currentDate = Date()
         let completedStory = Convenience.sharedInstance().text
-        print(completedStory)
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let story = Story(context: context)
@@ -69,7 +63,6 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
     }
-    
     
 
 }

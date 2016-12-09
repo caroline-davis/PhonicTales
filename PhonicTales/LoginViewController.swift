@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
             myLoginButton.titleLabel!.font = UIFont(name: "Helvetica Bold", size: 16)
             
              // get user to login to the fb via the fb button
-            myLoginButton.addTarget(self, action: #selector(self.loginButtonClicked), for: .touchUpInside)
+            myLoginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
             view.addSubview(myLoginButton)
         }
         // Do any additional setup after loading the view, typically from a nib.

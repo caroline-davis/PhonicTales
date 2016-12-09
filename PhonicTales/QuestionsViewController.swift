@@ -40,7 +40,6 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
     }
 
     func pickOutQuestion() {
-        print(questions.count, questionIndex)
         if questionIndex <= questions.count - 1 {
             question.text = questions[questionIndex]
             questionIndex += 1
@@ -50,22 +49,17 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
         }
     }
     
-
-
  
     // alert msg pops up if they forget to put in an answer
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.text == "" {
             
             Convenience.sharedInstance().alertMessage(errorMessage: "Oops! You forgot to put in an answer", sender: self)
-            print ("its empty")
         } else {
             Convenience.sharedInstance().usersAnswers.append(textField.text!)
-            print(Convenience.sharedInstance().usersAnswers)
             pickOutQuestion()
             textField.text = ""
         }
-
         return false
     }
     

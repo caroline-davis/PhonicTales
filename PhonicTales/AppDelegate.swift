@@ -21,6 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let handled = SDKApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
         return handled
     }
+    
+//    FBSDKApplicationDelegate.sharedInstance().application(app, openURL: url, sourceApplication: options["UIApplicationOpenURLOptionsSourceApplicationKey"] as! String!, annotation: nil) 
+//    
+    
+ 
     // facebook login extras
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let handled = SDKApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class Convenience: UIViewController {
+class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,22 @@ class Convenience: UIViewController {
         sender.present(alertController, animated: true, completion: nil)
     }
     
+    // play func
+    func play(synthesizer: AVSpeechSynthesizer) {
+        if !synthesizer.isSpeaking {
+            let utterance = AVSpeechUtterance(string: self.text)
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+            utterance.rate = 0.4
+            synthesizer.speak(utterance)
+        } else if synthesizer.isSpeaking && synthesizer.isPaused {
+            synthesizer.continueSpeaking()
+        } else if synthesizer.isSpeaking {
+            synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
+           
+            
+        }
+
+    }
     
 
     

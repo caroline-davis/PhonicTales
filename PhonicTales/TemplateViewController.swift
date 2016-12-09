@@ -20,13 +20,10 @@ class TemplateViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     @IBAction func buttonPushed (sender: UIButton) {
         let checkButtonName = sender.restorationIdentifier!
-        print(checkButtonName)
         switch checkButtonName {
         case "Animal": Convenience.sharedInstance().selectedStory = "Animal"
         case "Fight": Convenience.sharedInstance().selectedStory = "Fight"

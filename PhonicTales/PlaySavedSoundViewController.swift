@@ -20,32 +20,26 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.text = Convenience.sharedInstance().text
-        //print( self.text)
-        
-        // Do any additional setup after loading the view.
+       
     }
 
     
     // sets the playback
-    func recordedStory(){
-        let utterance = AVSpeechUtterance(string: self.text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-        utterance.rate = 0.4
+    @IBAction func playRecordedStory(){
+        Convenience.sharedInstance().play(synthesizer: synthesizer)
         
-        self.synthesizer.speak(utterance)
     }
     
-    // plays text as sound
-    @IBAction func playSound(){
-//        for (index, word) in Convenience.sharedInstance().usersAnswers.enumerated() {
-//            Convenience.sharedInstance().text = Convenience.sharedInstance().text.replacingOccurrences(of: "<\(index)>", with: word)
-//        }
-        recordedStory()
-    }
     
     // stops text as sound
     @IBAction func stopSounds(){
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
+        
+    }
+    
+    func buttonImageSwap(button: UIButton) {
+        button.frame = CGRect(x: 0, y: 0, width: 50, height: 30)
+        button.setImage(UIImage(named: "Play"), for: .normal)
     }
 
 
