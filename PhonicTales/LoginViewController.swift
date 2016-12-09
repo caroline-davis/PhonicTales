@@ -35,7 +35,6 @@ class LoginViewController: UIViewController {
             myLoginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
             view.addSubview(myLoginButton)
         }
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,11 +64,7 @@ class LoginViewController: UIViewController {
     private func completeLogin() {
         let controller = self.storyboard!.instantiateViewController(withIdentifier: "NavigationController") as! UINavigationController
         self.present(controller, animated: false, completion: nil)
-
-
     }
-    
-
 
 }
 

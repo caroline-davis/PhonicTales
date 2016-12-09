@@ -27,19 +27,14 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
 
-    
     // sets the playback
-    @IBAction func playRecordedStory(){
+    @IBAction func playSound(){
         Convenience.sharedInstance().play(synthesizer: synthesizer, button: play)
-        
     }
     
-    
     // stops text as sound
-    @IBAction func stopSounds(){
-        synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
-        let image = UIImage(named: "Play") as UIImage!
-        play.setImage(image, for: .normal)
+    @IBAction func stopSound(){
+        Convenience.sharedInstance().stop(synthesizer: synthesizer, button: play)
     }
     
 

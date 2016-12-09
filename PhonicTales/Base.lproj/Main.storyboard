@@ -285,34 +285,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have finished your tale!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nr-0a-Dcz">
-                                <frame key="frameInset" minX="58" minY="147" width="261" height="29"/>
+                                <frame key="frameInset" minX="58" minY="149" width="261" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" fixedFrame="YES" image="Trophy" translatesAutoresizingMaskIntoConstraints="NO" id="vgg-Ew-ifb">
-                                <frame key="frameInset" minX="147" minY="225" width="80" height="95"/>
+                                <frame key="frameInset" minX="147" minY="223" width="80" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-Qr-DUo">
-                                <frame key="frameInset" minX="102" minY="363" width="68" height="68"/>
+                                <frame key="frameInset" minX="102" minY="365" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play"/>
                                 <connections>
-                                    <action selector="recordedStory" destination="PVW-8G-BTo" eventType="touchUpInside" id="pxi-fX-hu8"/>
+                                    <action selector="playSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="BUs-wF-P1r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-ow-RxC">
-                                <frame key="frameInset" minX="202" minY="363" width="69" height="69"/>
+                                <frame key="frameInset" minX="202" minY="365" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Stop"/>
                                 <connections>
-                                    <action selector="stopSounds" destination="PVW-8G-BTo" eventType="touchUpInside" id="U8O-17-Rbz"/>
+                                    <action selector="stopSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="Jj7-GW-hS5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play your Phonic Tale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-Un-hOm">
-                                <frame key="frameInset" minX="71" minY="458" width="227" height="34"/>
+                                <frame key="frameInset" minX="71" minY="466" width="227" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                 <color key="textColor" red="0.047813691198825836" green="0.01563350111246109" blue="0.011225162073969841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -336,10 +336,10 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All tales are automatically saved so you can hear them again and again!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-Ni-gxF">
-                                <frame key="frameInset" minX="40" minY="533" width="299" height="57"/>
+                                <frame key="frameInset" minX="42" minY="539" width="293" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.015686274510000001" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -348,7 +348,8 @@
                     <connections>
                         <outlet property="homeButton" destination="Fn0-fI-RTr" id="T0V-E2-xN4"/>
                         <outlet property="navBar" destination="fQN-Ej-oYB" id="LP4-HK-DB1"/>
-                        <outlet property="sounds" destination="lSQ-Qr-DUo" id="2jv-5U-FNy"/>
+                        <outlet property="play" destination="lSQ-Qr-DUo" id="gLE-BL-2uU"/>
+                        <outlet property="saveInfo" destination="ZXa-Ni-gxF" id="Rmg-fA-Dbq"/>
                         <outlet property="stop" destination="Mcf-ow-RxC" id="4OP-Rv-xZp"/>
                     </connections>
                 </viewController>
@@ -431,24 +432,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have a listen to your Phonic Tale" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfB-Av-BBZ">
+                                <frame key="frameInset" minX="51" minY="87" width="272" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="27"/>
+                                <color key="textColor" red="0.63921568630000003" green="0.086274509799999996" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What an awesome tale!  Don't forget to make some more!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAI-id-Z69">
+                                <frame key="frameInset" minX="25" minY="413" width="325" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Play" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-t6-WdK" userLabel="PlayButton">
-                                <frame key="frameInset" minX="75" minY="166" width="105" height="105"/>
+                                <frame key="frameInset" minX="75" minY="219" width="105" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play"/>
                                 <connections>
-                                    <action selector="playRecordedStory" destination="dLr-Qe-Zbe" eventType="touchUpInside" id="nNJ-5M-U94"/>
+                                    <action selector="playSound" destination="dLr-Qe-Zbe" eventType="touchUpInside" id="6eX-vd-fL5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Stop" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ans-gt-ulT" userLabel="StopButton">
-                                <frame key="frameInset" minX="195" minY="166" width="105" height="105"/>
+                                <frame key="frameInset" minX="195" minY="219" width="105" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Stop"/>
                                 <connections>
-                                    <action selector="stopSounds" destination="dLr-Qe-Zbe" eventType="touchUpInside" id="J7D-nl-YVY"/>
+                                    <action selector="stopSound" destination="dLr-Qe-Zbe" eventType="touchUpInside" id="3Jy-3B-Tzj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="play" destination="3eM-t6-WdK" id="rLF-pA-Nm1"/>
@@ -457,7 +471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GY9-xS-KlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3209" y="553"/>
+            <point key="canvasLocation" x="3208.8000000000002" y="552.77361319340332"/>
         </scene>
     </scenes>
     <resources>

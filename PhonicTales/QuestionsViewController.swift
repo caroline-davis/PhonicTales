@@ -49,7 +49,6 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
         }
     }
     
- 
     // alert msg pops up if they forget to put in an answer
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField.text == "" {
@@ -62,7 +61,5 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
         }
         return false
     }
-    
-    
     
 }

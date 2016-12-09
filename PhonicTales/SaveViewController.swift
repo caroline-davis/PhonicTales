@@ -92,6 +92,7 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.reloadData()
     }
     
+    // segues to vc where user can listen to their tale
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
