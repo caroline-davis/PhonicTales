@@ -83,23 +83,29 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
     }
     
     // play func
-    func play(synthesizer: AVSpeechSynthesizer) {
+    func play(synthesizer: AVSpeechSynthesizer, button: UIButton) {
         if !synthesizer.isSpeaking {
             let utterance = AVSpeechUtterance(string: self.text)
             utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
             utterance.rate = 0.4
+            let image = UIImage(named: "Pause") as UIImage!
+            button.setImage(image, for: .normal)
             synthesizer.speak(utterance)
         } else if synthesizer.isSpeaking && synthesizer.isPaused {
+            let image = UIImage(named: "Pause") as UIImage!
+            button.setImage(image, for: .normal)
             synthesizer.continueSpeaking()
+            
         } else if synthesizer.isSpeaking {
+            let image = UIImage(named: "Play") as UIImage!
+            button.setImage(image, for: .normal)
             synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
-           
+            
             
         }
 
     }
     
-
     
     
     // shared instance singleton

@@ -20,13 +20,17 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.text = Convenience.sharedInstance().text
-       
+    }
+    
+    //stops sound when user leaves vc
+    override func viewWillDisappear(_ animated: Bool) {
+        synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
 
     
     // sets the playback
     @IBAction func playRecordedStory(){
-        Convenience.sharedInstance().play(synthesizer: synthesizer)
+        Convenience.sharedInstance().play(synthesizer: synthesizer, button: play)
         
     }
     
@@ -34,14 +38,9 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
     // stops text as sound
     @IBAction func stopSounds(){
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
-        
+        let image = UIImage(named: "Play") as UIImage!
+        play.setImage(image, for: .normal)
     }
     
-    func buttonImageSwap(button: UIButton) {
-        button.frame = CGRect(x: 0, y: 0, width: 50, height: 30)
-        button.setImage(UIImage(named: "Play"), for: .normal)
-    }
-
-
 
 }

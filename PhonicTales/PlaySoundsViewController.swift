@@ -29,6 +29,12 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
         self.navBar.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 60.00)
     }
     
+    //stops sound when user leaves vc
+    override func viewWillDisappear(_ animated: Bool) {
+        synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
+    }
+
+    
     // add the users words into the string
     func insertWords(){
         for (index, word) in Convenience.sharedInstance().usersAnswers.enumerated() {
@@ -38,12 +44,14 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
    
     // sets the playback and plays the text as sound
     @IBAction func recordedStory(){
-        Convenience.sharedInstance().play(synthesizer: synthesizer)
+        Convenience.sharedInstance().play(synthesizer: synthesizer, button: sounds)
     }
     
     // stops text as sound
     @IBAction func stopSounds(){
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
+        let image = UIImage(named: "Play") as UIImage!
+        sounds.setImage(image, for: .normal)
     }
     
 
