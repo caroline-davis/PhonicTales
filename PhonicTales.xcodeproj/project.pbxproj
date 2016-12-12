@@ -10,10 +10,10 @@
 		0A9F0D671F09989EC8713967 /* Pods_PhonicTalesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1C5EDBB8870B645790CFFC /* Pods_PhonicTalesTests.framework */; };
 		5309CC35C364E06C075D000F /* Pods_PhonicTales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110FE1201AEE6E33D63F0D33 /* Pods_PhonicTales.framework */; };
 		E1D678D5B9A3774B74020D43 /* Pods_PhonicTalesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BF28D9CE2388C805A4931D /* Pods_PhonicTalesUITests.framework */; };
+		F112FD4F1DFE534B0037252A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F112FD4E1DFE534B0037252A /* Main.storyboard */; };
 		F13935A11DF8DA130093C94D /* PlaySavedSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13935A01DF8DA130093C94D /* PlaySavedSoundViewController.swift */; };
 		F1A2B7161DDE8E6F004B8B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */; };
 		F1A2B7181DDE8E6F004B8B78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B7171DDE8E6F004B8B78 /* LoginViewController.swift */; };
-		F1A2B71B1DDE8E6F004B8B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */; };
 		F1A2B71E1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A2B71C1DDE8E6F004B8B78 /* PhonicTales.xcdatamodeld */; };
 		F1A2B7201DDE8E6F004B8B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */; };
 		F1A2B7231DDE8E6F004B8B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A2B7211DDE8E6F004B8B78 /* LaunchScreen.storyboard */; };
@@ -54,11 +54,11 @@
 		CC1C5EDBB8870B645790CFFC /* Pods_PhonicTalesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhonicTalesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AB13894E32F300CC2D26A0 /* Pods-PhonicTalesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonicTalesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhonicTalesUITests/Pods-PhonicTalesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8A9ADDCA7938B6D0D6FCF43 /* Pods-PhonicTalesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonicTalesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhonicTalesTests/Pods-PhonicTalesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F112FD4E1DFE534B0037252A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F13935A01DF8DA130093C94D /* PlaySavedSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySavedSoundViewController.swift; sourceTree = "<group>"; };
 		F1A2B7121DDE8E6F004B8B78 /* PhonicTales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonicTales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A2B7151DDE8E6F004B8B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1A2B7171DDE8E6F004B8B78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F1A2B71A1DDE8E6F004B8B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1A2B71D1DDE8E6F004B8B78 /* PhonicTales.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhonicTales.xcdatamodel; sourceTree = "<group>"; };
 		F1A2B71F1DDE8E6F004B8B78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1A2B7221DDE8E6F004B8B78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 		F1C87BFF1DE3C47700CAF365 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */,
+				F112FD4E1DFE534B0037252A /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -339,9 +339,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F112FD4F1DFE534B0037252A /* Main.storyboard in Resources */,
 				F1A2B7231DDE8E6F004B8B78 /* LaunchScreen.storyboard in Resources */,
 				F1A2B7201DDE8E6F004B8B78 /* Assets.xcassets in Resources */,
-				F1A2B71B1DDE8E6F004B8B78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,14 +549,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1A2B7191DDE8E6F004B8B78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1A2B71A1DDE8E6F004B8B78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1A2B7211DDE8E6F004B8B78 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

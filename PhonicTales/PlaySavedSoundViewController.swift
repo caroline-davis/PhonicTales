@@ -21,6 +21,7 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
         super.viewDidLoad()
         self.text = Convenience.sharedInstance().text
     }
+
     
     //stops sound when user leaves vc
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,7 +31,9 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
     // sets the playback
     @IBAction func playSound(){
         Convenience.sharedInstance().play(synthesizer: synthesizer, button: play)
-    }
+            }
+    
+// when sound is played straight to the end, at the end we need to make the button go back to the play button
     
     // stops text as sound
     @IBAction func stopSound(){

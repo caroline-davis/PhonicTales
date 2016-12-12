@@ -38,8 +38,13 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
             button.setImage(image, for: .normal)
             synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
         }
-
+ 
     }
+  
+
+   
+    
+    
     
     // stop func for sounds
     func stop(synthesizer: AVSpeechSynthesizer, button: UIButton) {
@@ -91,18 +96,18 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
                 "Name a different action verb"]
         ],
         "Ship": [
-            "text": "It was the year  <0> and Mr <1> was setting out on his first voyage across the ocean. He was getting ready for his journey alongside his friend <2> who needed to get to <3> for a wedding. The wedding was costume themed, so Mr <1> was dressing up as a <4> and <2> as a <5>. The two had never been to <3> before, but were keen to set sail. The ship was called the <6> of the sea and was bright <7>.  As the ship began to leave the shore, a <8>  <9> jumped out of the water and began thrashing about in the sea. The <9> was wreaking havoc as the ships crew tried to steer the ship away from the gigantic waves. However, the <9> was too strong and the ship ended up getting pushed back to the dock. Disappointed, Mr <1> and <2> stepped off the ship and back onto land, A lady called out to them with a telegram. It said 'Dont come to <3>, the wedding has been cancelled. The groom went fishing and was eaten by a giant <9>'. Mr <1> and <2> couldn’t believe it, went back to shore and ate <9> for dinner.",
+            "text": "It was the year  <0> and Mr <1> was setting out on his first voyage across the ocean. He was getting ready for his journey alongside his friend <2> who needed to get to <3> for a wedding. The wedding was costume themed, so Mr <1> was dressing up as a <4> and <2> as a <5>. The two had never been to <3> before, but were keen to set sail. The ship was called the <6> of the sea and was bright <7>.  As the ship began to leave the shore, a <8>  <9> jumped out of the water and began thrashing about in the sea. The <9> was wreaking havoc as the ships crew tried to steer the ship away from the gigantic waves. However, the <9> was too strong and the ship ended up getting pushed back to the dock. Disappointed, Mr <1> and <2> stepped off the ship and back onto land, A lady called out to them with a telegram. It said 'Do not come to <3>, the wedding has been cancelled. The groom went fishing and was eaten by a giant <9>'. Mr <1> and <2> couldn’t believe it, went back to shore and ate <9> for dinner.",
             "questions": [
                 "Type in a year",
-                "Type in a name",
+                "Type in a  last name",
                 "Type in another name",
                 "Name a country",
-                "Name a sea creature",
+                "Type in an animal",
                 "Name an occupation",
                 "What’s your favourite food?",
                 "Name your favourite colour?",
                 "Type in an adjective",
-                "Name another animal"]
+                "Name a sea creature"]
         ],
         "Love": [
             "text": "<0> was tired of being single and decided to try her hand at the new dating show, love by <1>. The auditions were being held in the town of <2> and <0> had a feeling that this time she would find love. She decided to wear a <3> <4> and left to go to the audition. At the audition she saw a FUNNY man with a <5> on his shoulder. She thought I wonder if he knows that <5> is on his shoulder.  It was then time for the audition and she was met with <6> people and a <7>. The <7> was the first to ask a question. It said 'Why am I talking to you? Are you okay?’. <0> couldn’t believe her eyes, was she dreaming? She said, ‘I am <8>, I just want to find love'. The other people laughed and said, ‘I think you’re in the wrong studio, these are auditions for the new show ‘Are you losing your mind or are you just kind?.’ <0> stood there <9> and ran outside. She saw the man with the <5> on his shoulder smiled and said ‘You’re so gonna get this job’.",
@@ -117,8 +122,23 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
                 "Name an object",
                 "Name an emotion",
                 "Type an action verb"]
+        ],
+    "Food": [
+        "text": "It was nearly <0>s birthday and he decided to have a party at the new themed restaurant, <1> for tea. Little <0> was turning <2> so this was a big deal for everyone in <0>S family. His sister <3> was <4> and had never eaten <1> before so she was really <5> about the party. It was the day of the party and all <0>s <6> friends arrived. They were wearing <7> party hats and were throwing streamers,. <0> was so excited he screamed 'its my birthday and I'm eating <1> for <8>'! The waiters brought out <0>S <1> and he sat there and stared at it,. <3> said what are you looking at? and <0> replied ‘I cant eat this! I can see its <9> eyes, looking at me.' <3> was confused. There were no eyes on the <1>,. <3> ate the <1> and said ‘No need to worry now, Its in my belly’,. <0> looked at <3> and screamed. She had become the <1>.",
+        "questions": [
+            "Type in a boys name",
+            "Name a type of food",
+            "Type in a number",
+            "Type in a girls name",
+            "Name another number",
+            "Type in an emotion",
+            "Name a sport",
+            "Name a colour",
+            "Type in a meal time",
+            "Name a size"
+
         ]
     ]
-
+]
     
 }

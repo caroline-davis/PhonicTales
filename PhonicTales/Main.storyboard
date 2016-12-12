@@ -166,6 +166,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Food" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-RO-m0u">
                                                 <state key="normal" image="FoodIcon"/>
+                                                <connections>
+                                                    <action selector="buttonPushedWithSender:" destination="UVQ-fE-ZOx" eventType="touchUpInside" id="JMt-BB-yfe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Love" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16q-Xs-f6u">
                                                 <state key="normal" image="HeartIcon"/>
@@ -339,7 +342,7 @@
                                 <frame key="frameInset" minX="42" minY="539" width="293" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
-                                <color key="textColor" red="0.52941176469999995" green="0.015686274510000001" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -463,6 +466,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="play" destination="3eM-t6-WdK" id="rLF-pA-Nm1"/>
