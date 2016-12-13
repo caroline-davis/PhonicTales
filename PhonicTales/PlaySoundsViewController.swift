@@ -23,8 +23,7 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
-        
-        
+
     }
     
     // makes the nav bar thicker
