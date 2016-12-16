@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-BV-eKW" userLabel="MasterStack">
@@ -63,7 +63,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hae-ye-8gI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="98w-tj-e8D">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7dm-vM-iAu" userLabel="MasterStack">
@@ -102,7 +102,7 @@
                         <color key="tintColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7dm-vM-iAu" firstAttribute="leading" secondItem="98w-tj-e8D" secondAttribute="leadingMargin" id="7Fm-3f-MsK"/>
-                            <constraint firstItem="Hae-ye-8gI" firstAttribute="top" secondItem="7dm-vM-iAu" secondAttribute="bottom" constant="75" id="Rq9-dv-DVf"/>
+                            <constraint firstItem="Hae-ye-8gI" firstAttribute="top" secondItem="7dm-vM-iAu" secondAttribute="bottom" multiplier="1.1" id="Rq9-dv-DVf"/>
                             <constraint firstItem="7dm-vM-iAu" firstAttribute="top" secondItem="Jpu-Qv-ulv" secondAttribute="bottom" constant="8" symbolic="YES" id="Ubz-E7-HOA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7dm-vM-iAu" secondAttribute="trailing" id="YIC-rZ-IHl"/>
                         </constraints>
@@ -143,7 +143,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fp7-SO-M1a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OpU-82-JMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m03-K1-j4V" userLabel="Root Stack View">
@@ -243,7 +243,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3tt-Ft-cD1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="78e-hk-CMs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lLo-ci-DoS">
@@ -292,7 +292,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kZs-CK-W2O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0BB-9X-QRb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-Ej-oYB">
@@ -385,7 +385,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wR5-21-urJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sqy-01-bsF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Phonic Tales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDz-Cq-43X">
@@ -397,10 +397,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="MVh-rM-ZwI" userLabel="Cell">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MVh-rM-ZwI" id="5eF-ZI-wO6">
-                                            <frame key="frameInset" width="288" height="43"/>
+                                            <frame key="frameInset" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-Ji-xhe">
@@ -448,7 +448,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Q4J-3e-tix"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uep-ap-jce" userLabel="OuterView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uZk-jj-cUA">
