@@ -299,9 +299,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-Ej-oYB">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2wK-Qn-QNG"/>
-                                </constraints>
                                 <items>
                                     <navigationItem id="0z2-un-c34">
                                         <barButtonItem key="leftBarButtonItem" image="Home" id="Fn0-fI-RTr">
@@ -364,6 +361,7 @@
                             <constraint firstItem="fQN-Ej-oYB" firstAttribute="leading" secondItem="0BB-9X-QRb" secondAttribute="leading" id="KKk-tQ-Me9"/>
                             <constraint firstItem="fQN-Ej-oYB" firstAttribute="top" secondItem="0BB-9X-QRb" secondAttribute="top" id="PUC-pg-nKS"/>
                             <constraint firstAttribute="trailing" secondItem="U8G-ja-KVT" secondAttribute="trailing" constant="20" symbolic="YES" id="Yhs-4K-N3e"/>
+                            <constraint firstItem="fQN-Ej-oYB" firstAttribute="height" secondItem="0BB-9X-QRb" secondAttribute="height" multiplier="0.1" id="f4b-6Q-dNI"/>
                             <constraint firstAttribute="trailing" secondItem="fQN-Ej-oYB" secondAttribute="trailing" id="oPC-Ub-tEy"/>
                             <constraint firstItem="U8G-ja-KVT" firstAttribute="leading" secondItem="0BB-9X-QRb" secondAttribute="leading" constant="20" symbolic="YES" id="t4z-Lq-q3m"/>
                             <constraint firstItem="U8G-ja-KVT" firstAttribute="top" secondItem="fQN-Ej-oYB" secondAttribute="bottom" symbolic="YES" id="wZo-Nv-dMF"/>
