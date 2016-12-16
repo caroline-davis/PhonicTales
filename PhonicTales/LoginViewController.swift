@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
             myLoginButton.backgroundColor = UIColor(red:0.27, green:0.36, blue:0.61, alpha:1.0)
             myLoginButton.layer.cornerRadius = 5
             myLoginButton.frame = CGRect(x: 0, y: 0, width: 180, height: 40);
-            myLoginButton.center = CGPoint(x: buttonWidth / 2, y: buttonHeight - 100);
+            myLoginButton.center = CGPoint(x: buttonWidth / 2, y: buttonHeight - 80);
             myLoginButton.titleLabel!.font = UIFont(name: "Helvetica Bold", size: 16)
             
              // get user to login to the fb via the fb button

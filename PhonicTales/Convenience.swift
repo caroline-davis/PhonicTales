@@ -93,8 +93,8 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
             "text": "It was the year  <0> and Mr <1> was setting out on his first voyage across the ocean. He was getting ready for his journey alongside his friend <2> who needed to get to <3> for a wedding. The wedding was costume themed, so Mr <1> was dressing up as a <4> and <2> as a <5>. The two had never been to <3> before, but were keen to set sail. The ship was called the <6> of the sea and was bright <7>.  As the ship began to leave the shore, a <8>  <9> jumped out of the water and began thrashing about in the sea. The <9> was wreaking havoc as the ships crew tried to steer the ship away from the gigantic waves. However, the <9> was too strong and the ship ended up getting pushed back to the dock. Disappointed, Mr <1> and <2> stepped off the ship and back onto land, A lady called out to them with a telegram. It said 'Do not come to <3>, the wedding has been cancelled. The groom went fishing and was eaten by a giant <9>'. Mr <1> and <2> couldn’t believe it, went back to shore and ate <9> for dinner.",
             "questions": [
                 "Type in a year",
-                "Type in a  last name",
-                "Type in another name",
+                "Type in a last name",
+                "Type in first name",
                 "Name a country",
                 "Type in an animal",
                 "Name an occupation",
@@ -132,28 +132,28 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
             "Name a size"]
         ],
     "Ghost": [
-        "text": "It was half past <0> when <1> heard a weird noise coming from the attic. The house was always full of <2> noises, but this one seemed distinctively odd,. Screeeech, bubble bubble, Screeech,, went the noise. <1> lay in bed wondering if it was a <3> or maybe even a ghost? <1> went to investigate, put on her brand new <4> slippers and creeped upstairs. screech bubble bubble screech bubble bubble went the sound. a GHOST like air swept the staircase and <1> began to feel rather <5>. She peeped through the door and saw something move. She nervously crept inside and saw a <6> pot bubbling away. <1> heard a whisper, she screamed 'ahhhhh a ghost is in my house'. She ran downstairs as <7> as she could and heard a <8> chuckle behind her. She heard a familiar voice say 'Are you sure you don’t want some stew <1>'. It was <1>S grandmother <9>, she forgot she had moved in the day before. 'Oh sure gran, as long as its not frogs legs'.",
+        "text": "It was half past <0> when <1> heard a weird noise coming from the attic. The house was always full of <2> noises, but this one seemed distinctively odd,. Bubble bubble bubble, went the noise. <1> lay in bed wondering if it was a <3> or maybe even a ghost? <1> went to investigate, put on her brand new <4> slippers and creeped upstairs. Bubble bubble bubble, went the sound. a GHOST like air swept the staircase and <1> began to feel rather <5>. She peeped through the door and saw something move. She nervously crept inside and saw a <6> pot bubbling away. <1> heard a whisper, she screamed 'ahhhhh a ghost is in my house'. She ran downstairs as <7> as she could and heard a <8> chuckle behind her. She heard a familiar voice say 'Are you sure you don’t want some stew, <1>'. It was <1>S grandmother <9>, she forgot she had moved in the day before. 'Oh sure gran, as long as its not frogs legs'.",
         "questions": [
             "Type in a number",
             "Type in a female name",
             "Name an adjective",
             "Name an animal",
             "Type in a colour",
-            "Type in a weather description",
+            "Describe the weather",
             "Small, Medium or Large?",
             "Name a speed",
             "Type in an adjective",
             "Type in female name"]
         ],
     "Fight": [
-        "text": "In the kingdom of <0> there was prince named <1>. The prince fell ill from a witches spell and was asleep for <2> hours. To wake the prince from his slumber, a strange <3> was to be plucked form a <4> mountain in the sky. The princes warriors, <5> and Rocky set off on a voyage to obtain the <3>. Only a mile from the kingdom the warriors were met with <6> bandits. The bandits wanted to steal <5>S golden <7>. The bandits had weapons of all sorts, swords, <8>s, hammers, you name it they had it. Rocky was a fine swordsman and beat the bandits up one by one and saved <5>S <7>. The two continued their journey, plucked the <3> and came back to the kingdom. The queen went to use the <3> on her son, however, the prince, would not wake up! The <3> had died! Rocky stamped his feet in despair and BOING the Prince jumped high off his <9> bed. Apparently Rocky's <7> were magical, and they didn't need the <3> after all.",
+        "text": "In the kingdom of <0> there was a prince named <1>. The prince fell ill from a witches spell and was asleep for <2> hours. To wake the prince from his slumber, a strange <3> was to be plucked from a <4> mountain in the sky. The princes warriors, <5> and Rocky set off on a voyage to obtain the <3>. Only a mile from the kingdom the warriors were met with <6> bandits. The bandits wanted to steal <5>S golden <7>. The bandits had weapons of all sorts, swords, hammers, <8>s, you name it they had it. Rocky was a fine swordsman and beat the bandits up one by one and saved <5>S <7>. The two continued their journey, plucked the <3> and came back to the kingdom. The queen went to use the <3> on her son, however, the prince would not wake up! The <3> had died! Rocky stamped his feet in despair and 'BOING' the Prince jumped high off his <9> bed. Apparently Rocky's <7> was magical, and they didn't need the <3> after all.",
         "questions":[
             "Name a town",
             "Type in a male name",
             "Type in a number",
             "Name a vegetable",
             "Small, Medium or Large?",
-            "Type in snother name",
+            "Type in another name",
             "Type in a different number",
             "Name an item of clothing",
             "Name a cooking utensil",

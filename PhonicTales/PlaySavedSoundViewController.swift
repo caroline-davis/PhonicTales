@@ -20,6 +20,9 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.text = Convenience.sharedInstance().text
+        
+        play.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        stop.imageView?.contentMode = UIViewContentMode.scaleAspectFit
     }
 
     
