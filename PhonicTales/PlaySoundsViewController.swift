@@ -23,12 +23,16 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
+        
+        play.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        stop.imageView?.contentMode = UIViewContentMode.scaleAspectFit
 
     }
     
     // makes the nav bar thicker
     override func viewWillAppear(_ animated: Bool) {
         self.navBar.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 60.00)
+        
     }
     
     //stops sound when user leaves vc

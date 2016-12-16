@@ -17,10 +17,10 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-BV-eKW" userLabel="MasterStack">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-BV-eKW" userLabel="MasterStack">
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-Mb-6xV"/>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your own personalised audio story" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2l-ie-0Hf">
@@ -29,16 +29,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Please login to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tyo-2E-srG">
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="tyo-2E-srG" firstAttribute="height" secondItem="T2l-ie-0Hf" secondAttribute="height" id="WZH-I7-SCx"/>
+                                    <constraint firstItem="T2l-ie-0Hf" firstAttribute="height" secondItem="XJb-Mb-6xV" secondAttribute="height" multiplier="0.25" id="bRu-8I-r2G"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yyy-BV-eKW" secondAttribute="bottom" constant="18.333333333333371" id="LUn-WB-5VG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yyy-BV-eKW" secondAttribute="bottom" multiplier="1.05" id="LUn-WB-5VG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yyy-BV-eKW" secondAttribute="trailing" id="aWT-dI-lQg"/>
                             <constraint firstAttribute="leadingMargin" secondItem="yyy-BV-eKW" secondAttribute="leading" id="nJN-XQ-YhY"/>
                             <constraint firstItem="yyy-BV-eKW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="u0q-Ck-gir"/>
@@ -59,7 +63,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hae-ye-8gI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="98w-tj-e8D">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7dm-vM-iAu" userLabel="MasterStack">
@@ -139,7 +143,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fp7-SO-M1a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OpU-82-JMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m03-K1-j4V" userLabel="Root Stack View">
@@ -239,7 +243,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3tt-Ft-cD1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="78e-hk-CMs">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yz4-td-JcO">
@@ -255,7 +259,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Book" translatesAutoresizingMaskIntoConstraints="NO" id="1do-ig-2fD">
-                                <frame key="frameInset" minX="97" minY="318" width="221" height="358"/>
+                                <frame key="frameInset" minX="50" minY="299" width="314" height="314"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -291,12 +295,13 @@
                         <viewControllerLayoutGuide type="bottom" id="kZs-CK-W2O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0BB-9X-QRb">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-Ej-oYB">
-                                <frame key="frameInset" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-Ej-oYB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2wK-Qn-QNG"/>
+                                </constraints>
                                 <items>
                                     <navigationItem id="0z2-un-c34">
                                         <barButtonItem key="leftBarButtonItem" image="Home" id="Fn0-fI-RTr">
@@ -311,56 +316,58 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-bB-Adc">
-                                <frame key="frameInset" minX="53" minY="68" width="309" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="41"/>
-                                <color key="textColor" red="0.63921568630000003" green="0.086274509799999996" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have finished your tale!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nr-0a-Dcz">
-                                <frame key="frameInset" minX="72" minY="132" width="275" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" fixedFrame="YES" image="Trophy" translatesAutoresizingMaskIntoConstraints="NO" id="vgg-Ew-ifb">
-                                <frame key="frameInset" minX="155" minY="197" width="103" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-Qr-DUo">
-                                <frame key="frameInset" minX="93" minY="358" width="105" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Play"/>
-                                <connections>
-                                    <action selector="playSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="BUs-wF-P1r"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-ow-RxC">
-                                <frame key="frameInset" minX="218" minY="358" width="105" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Stop"/>
-                                <connections>
-                                    <action selector="stopSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="Jj7-GW-hS5"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All tales are automatically saved so you can hear them again and again!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-Ni-gxF">
-                                <frame key="frameInset" minX="12" minY="581" width="389" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
-                                <color key="textColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play your Phonic Tale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-Un-hOm">
-                                <frame key="frameInset" minX="93" minY="502" width="227" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
-                                <color key="textColor" red="0.047813691198825836" green="0.01563350111246109" blue="0.011225162073969841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-ja-KVT">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="GVf-bB-Adc">
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="41"/>
+                                        <color key="textColor" red="0.63921568630000003" green="0.086274509799999996" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have finished your tale!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nr-0a-Dcz">
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Trophy" translatesAutoresizingMaskIntoConstraints="NO" id="vgg-Ew-ifb"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play your Phonic Tale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhw-Un-hOm">
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                                        <color key="textColor" red="0.047813691198825836" green="0.01563350111246109" blue="0.011225162073969841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YSv-eD-G7e" userLabel="ButtonStack">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-Qr-DUo">
+                                                <state key="normal" image="Play"/>
+                                                <connections>
+                                                    <action selector="playSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="BUs-wF-P1r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-ow-RxC">
+                                                <state key="normal" image="Stop"/>
+                                                <connections>
+                                                    <action selector="stopSound" destination="PVW-8G-BTo" eventType="touchUpInside" id="Jj7-GW-hS5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All tales are automatically saved so you can hear them again and again!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-Ni-gxF">
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" red="0.63921568627450975" green="0.086274509803921567" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kZs-CK-W2O" firstAttribute="top" secondItem="U8G-ja-KVT" secondAttribute="bottom" constant="8" symbolic="YES" id="7Ch-lr-dQc"/>
+                            <constraint firstItem="fQN-Ej-oYB" firstAttribute="leading" secondItem="0BB-9X-QRb" secondAttribute="leading" id="KKk-tQ-Me9"/>
+                            <constraint firstItem="fQN-Ej-oYB" firstAttribute="top" secondItem="0BB-9X-QRb" secondAttribute="top" id="PUC-pg-nKS"/>
+                            <constraint firstAttribute="trailing" secondItem="U8G-ja-KVT" secondAttribute="trailing" constant="20" symbolic="YES" id="Yhs-4K-N3e"/>
+                            <constraint firstAttribute="trailing" secondItem="fQN-Ej-oYB" secondAttribute="trailing" id="oPC-Ub-tEy"/>
+                            <constraint firstItem="U8G-ja-KVT" firstAttribute="leading" secondItem="0BB-9X-QRb" secondAttribute="leading" constant="20" symbolic="YES" id="t4z-Lq-q3m"/>
+                            <constraint firstItem="U8G-ja-KVT" firstAttribute="top" secondItem="fQN-Ej-oYB" secondAttribute="bottom" symbolic="YES" id="wZo-Nv-dMF"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="homeButton" destination="Fn0-fI-RTr" id="T0V-E2-xN4"/>
@@ -372,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1T-ot-n9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3927.5362318840585" y="-114.94565217391305"/>
+            <point key="canvasLocation" x="3927.1999999999998" y="-115.59220389805098"/>
         </scene>
         <!--Save View Controller-->
         <scene sceneID="Nit-AC-P1Y">
@@ -383,7 +390,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wR5-21-urJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sqy-01-bsF">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Phonic Tales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDz-Cq-43X">
@@ -395,10 +402,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="MVh-rM-ZwI" userLabel="Cell">
-                                        <rect key="frame" x="0.0" y="28" width="440" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MVh-rM-ZwI" id="5eF-ZI-wO6">
-                                            <frame key="frameInset" width="440" height="43"/>
+                                            <frame key="frameInset" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-Ji-xhe">
@@ -446,7 +453,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Q4J-3e-tix"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uep-ap-jce" userLabel="OuterView">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uZk-jj-cUA">
