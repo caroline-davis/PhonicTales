@@ -35,7 +35,9 @@ extension Convenience {
         }
         return false
     }
-
-
     
+    func logoutButtonClicked() {
+        LoginManager().logOut()
+
+    }
 }

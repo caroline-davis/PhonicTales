@@ -15,9 +15,12 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var saved: UIButton!
     @IBOutlet weak var createNew: UIButton!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.indicator.hidesWhenStopped = true
         
         // Adding left home button to nav bar
         let button = UIButton()
@@ -36,9 +39,10 @@ class HomeViewController: UIViewController {
         
     }
     
-    func logout(sender:UIBarButtonItem) {
-        LoginManager().logOut()
-        print("logged out")
+    // logs user out of facebook and takes them back to the login screen
+    func logout(sender: UIBarButtonItem) {
+        self.indicator.startAnimating()
+        Convenience.sharedInstance().logoutButtonClicked()
         DispatchQueue.main.async { () -> Void in
             self.presentingViewController!.dismiss(animated: true, completion: nil)
         }

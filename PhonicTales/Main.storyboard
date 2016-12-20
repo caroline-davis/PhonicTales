@@ -11,13 +11,13 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="PhonicTales" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="PhonicTales" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-BV-eKW" userLabel="MasterStack">
@@ -28,6 +28,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FDY-eg-aFS"/>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="T2l-ie-0Hf" firstAttribute="height" secondItem="XJb-Mb-6xV" secondAttribute="height" multiplier="0.5" id="bRu-8I-r2G"/>
@@ -43,6 +44,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ceA-lx-PcA"/>
+                    <connections>
+                        <outlet property="indicator" destination="FDY-eg-aFS" id="waG-gl-L7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +61,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hae-ye-8gI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="98w-tj-e8D">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7dm-vM-iAu" userLabel="MasterStack">
@@ -65,6 +69,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zYK-U6-OLQ" userLabel="LogoStack">
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-ii-Fx0"/>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lmC-kD-jeJ"/>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Z5W-KA-TcE" userLabel="ButtonStack">
@@ -104,6 +109,7 @@
                     <navigationItem key="navigationItem" id="k3f-jK-Vux"/>
                     <connections>
                         <outlet property="createNew" destination="Hfb-Hf-te5" id="AvK-Jq-kwV"/>
+                        <outlet property="indicator" destination="lmC-kD-jeJ" id="MO1-C7-dTg"/>
                         <outlet property="saved" destination="Ji8-vX-jKL" id="Ufb-h6-GGc"/>
                     </connections>
                 </viewController>
@@ -137,7 +143,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fp7-SO-M1a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OpU-82-JMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="m03-K1-j4V" userLabel="Root Stack View">
@@ -237,7 +243,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3tt-Ft-cD1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="78e-hk-CMs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lLo-ci-DoS">
@@ -286,7 +292,7 @@
                         <viewControllerLayoutGuide type="bottom" id="kZs-CK-W2O"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0BB-9X-QRb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-Ej-oYB">
@@ -300,6 +306,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Logout" id="Smh-0k-Vy6">
                                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="logoutWithSender:" destination="PVW-8G-BTo" id="2Ec-vV-stJ"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -345,6 +354,10 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KkS-h0-DvL">
+                                <frame key="frameInset" minX="150" minY="314" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -360,6 +373,8 @@
                     </view>
                     <connections>
                         <outlet property="homeButton" destination="Fn0-fI-RTr" id="T0V-E2-xN4"/>
+                        <outlet property="indicator" destination="KkS-h0-DvL" id="oC2-eB-dZ8"/>
+                        <outlet property="logout" destination="Smh-0k-Vy6" id="PNQ-Xp-Ydy"/>
                         <outlet property="navBar" destination="fQN-Ej-oYB" id="LP4-HK-DB1"/>
                         <outlet property="play" destination="lSQ-Qr-DUo" id="gLE-BL-2uU"/>
                         <outlet property="saveInfo" destination="ZXa-Ni-gxF" id="Rmg-fA-Dbq"/>
@@ -379,7 +394,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wR5-21-urJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Sqy-01-bsF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Phonic Tales" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDz-Cq-43X">
@@ -391,10 +406,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="MVh-rM-ZwI" userLabel="Cell">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MVh-rM-ZwI" id="5eF-ZI-wO6">
-                                            <frame key="frameInset" width="288" height="43"/>
+                                            <frame key="frameInset" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-Ji-xhe">
@@ -442,7 +457,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Q4J-3e-tix"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uep-ap-jce" userLabel="OuterView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uZk-jj-cUA">
@@ -468,7 +483,7 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="What an awesome tale!  Don't forget to make some more!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aAI-id-Z69">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="What an awesome tale!  Don't forget to make some more!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="aAI-id-Z69">
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19.5"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

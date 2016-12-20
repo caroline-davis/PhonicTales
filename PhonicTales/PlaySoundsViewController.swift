@@ -15,6 +15,8 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var stop: UIButton!
     @IBOutlet weak var navBar: UINavigationBar!
+    @IBOutlet weak var logout: UIBarButtonItem!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     @IBOutlet weak var saveInfo: UILabel!
 
@@ -23,12 +25,23 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
+        self.indicator.hidesWhenStopped = true
+        synthesizer.delegate = self
         
         play.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         stop.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-
     }
     
+    // logs user out of facebook and takes them back to the login screen
+    @IBAction func logout(sender: UIBarButtonItem) {
+        self.indicator.startAnimating()
+        Convenience.sharedInstance().logoutButtonClicked()
+        DispatchQueue.main.async { () -> Void in
+            let controller = self.storyboard!.instantiateViewController(withIdentifier: "LoginViewController")
+            self.present(controller, animated: true, completion: nil)
+        }
+    }
+
     
     //stops sound when user leaves vc
     override func viewWillDisappear(_ animated: Bool) {
@@ -50,6 +63,12 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     // stops text as sound
     @IBAction func stopSound(){
        Convenience.sharedInstance().stop(synthesizer: synthesizer, button: play)
+    }
+    
+    // returns image to play when sound finishes
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        let image = UIImage(named: "Play") as UIImage!
+        play.setImage(image, for: .normal)
     }
     
     // getting the data ready to be saved

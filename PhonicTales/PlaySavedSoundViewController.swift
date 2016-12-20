@@ -20,7 +20,7 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         self.text = Convenience.sharedInstance().text
-        
+        synthesizer.delegate = self
         play.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         stop.imageView?.contentMode = UIViewContentMode.scaleAspectFit
     }
@@ -30,11 +30,17 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
     override func viewWillDisappear(_ animated: Bool) {
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
+    
+    // returns image to play when sound finishes
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        let image = UIImage(named: "Play") as UIImage!
+        play.setImage(image, for: .normal)
+    }
 
     // sets the playback
     @IBAction func playSound(){
         Convenience.sharedInstance().play(synthesizer: synthesizer, button: play)
-            }
+    }
     
 // when sound is played straight to the end, at the end we need to make the button go back to the play button
     
