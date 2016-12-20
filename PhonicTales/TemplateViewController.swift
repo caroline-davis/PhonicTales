@@ -53,5 +53,5 @@ class TemplateViewController: UIViewController {
         anchor.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         ghost.imageView?.contentMode = UIViewContentMode.scaleAspectFit
     }
-    
+
 }

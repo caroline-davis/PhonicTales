@@ -19,7 +19,7 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
     var text: String = ""
     var selectedStory = ""
     
-    
+ 
     // play func for sounds
     func play(synthesizer: AVSpeechSynthesizer, button: UIButton) {
         if !synthesizer.isSpeaking {
