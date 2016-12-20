@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.indicator.hidesWhenStopped = true
@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
                 self.completeLogin()
                 self.indicator.stopAnimating()
             } else {
-               Convenience.sharedInstance().alertMessage(errorMessage: "Your login was unsuccessful, please try again", sender: self)
+                Convenience.sharedInstance().alertMessage(errorMessage: "Your login was unsuccessful, please try again", sender: self)
                 self.indicator.stopAnimating()
             }
         }
@@ -72,8 +72,7 @@ class LoginViewController: UIViewController {
         myLoginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         myLoginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
     }
-
     
-
+    
 }
 

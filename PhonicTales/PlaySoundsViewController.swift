@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
-
+    
     @IBOutlet weak var homeButton: UIBarButtonItem!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var stop: UIButton!
@@ -19,7 +19,7 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     @IBOutlet weak var saveInfo: UILabel!
-
+    
     let synthesizer = AVSpeechSynthesizer()
     
     override func viewDidLoad() {
@@ -41,20 +41,20 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
             self.present(controller, animated: true, completion: nil)
         }
     }
-
+    
     
     //stops sound when user leaves vc
     override func viewWillDisappear(_ animated: Bool) {
         synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
-
+    
     // add the users words into the string
     func insertWords(){
         for (index, word) in Convenience.sharedInstance().usersAnswers.enumerated() {
             Convenience.sharedInstance().text = Convenience.sharedInstance().text.replacingOccurrences(of: "<\(index)>", with: word)
         }
     }
-   
+    
     // sets the playback and plays the text as sound
     @IBAction func playSound(){
         Convenience.sharedInstance().play(synthesizer: synthesizer, button: play)
@@ -62,7 +62,7 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
     
     // stops text as sound
     @IBAction func stopSound(){
-       Convenience.sharedInstance().stop(synthesizer: synthesizer, button: play)
+        Convenience.sharedInstance().stop(synthesizer: synthesizer, button: play)
     }
     
     // returns image to play when sound finishes
@@ -82,26 +82,12 @@ class PlaySoundsViewController: UIViewController, AVSpeechSynthesizerDelegate {
         story.storyText = completedStory
         story.storyCreationDate = currentDate as NSDate?
         
-       //save the data to coredata
+        //save the data to coredata
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
     }
     
-
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

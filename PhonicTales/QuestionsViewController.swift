@@ -12,7 +12,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
     
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var question: UILabel!
-
+    
     var questions: [String] = []
     var questionIndex = 0
     
@@ -38,7 +38,7 @@ class QuestionsViewController: UIViewController, UITextFieldDelegate, UIAlertVie
             }
         }
     }
-
+    
     func pickOutQuestion() {
         if questionIndex <= questions.count - 1 {
             question.text = questions[questionIndex]

@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegate {
-
+    
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var stop: UIButton!
     
@@ -24,7 +24,7 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
         play.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         stop.imageView?.contentMode = UIViewContentMode.scaleAspectFit
     }
-
+    
     
     //stops sound when user leaves vc
     override func viewWillDisappear(_ animated: Bool) {
@@ -36,18 +36,18 @@ class PlaySavedSoundViewController: UIViewController, AVSpeechSynthesizerDelegat
         let image = UIImage(named: "Play") as UIImage!
         play.setImage(image, for: .normal)
     }
-
+    
     // sets the playback
     @IBAction func playSound(){
         Convenience.sharedInstance().play(synthesizer: synthesizer, button: play)
     }
     
-// when sound is played straight to the end, at the end we need to make the button go back to the play button
+    // when sound is played straight to the end, at the end we need to make the button go back to the play button
     
     // stops text as sound
     @IBAction func stopSound(){
         Convenience.sharedInstance().stop(synthesizer: synthesizer, button: play)
     }
     
-
+    
 }

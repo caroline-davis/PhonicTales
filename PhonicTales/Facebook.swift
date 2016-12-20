@@ -38,6 +38,6 @@ extension Convenience {
     
     func logoutButtonClicked() {
         LoginManager().logOut()
-
+        
     }
 }

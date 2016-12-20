@@ -16,9 +16,9 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var tableCell = "Cell"
     
     // with the core data will be var savedTales: [SavedTales] = []
-
+    
     @IBOutlet weak var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -41,9 +41,9 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return savedTales.count
     }
     
-   
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-  
+        
         var newDate = ""
         let cell = tableView.dequeueReusableCell(withIdentifier: self.tableCell)
         let tale = savedTales[indexPath.row]
@@ -55,13 +55,13 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
             newDate = newDateString
         }
         dateFormatChanger(date: tale.storyCreationDate!)
-         cell?.textLabel?.text = newDate
-         cell?.imageView?.image = #imageLiteral(resourceName: "BookIcon")
+        cell?.textLabel?.text = newDate
+        cell?.imageView?.image = #imageLiteral(resourceName: "BookIcon")
         
         return cell!
     }
- 
-//    This is for gathering the coredata
+    
+    //    This is for gathering the coredata
     func getData() {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         do
@@ -71,7 +71,6 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
             print("Fetching Failed")
         }
     }
-
     
     // This is for the delete swiper using core data on the table
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -101,8 +100,8 @@ class SaveViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let nextViewController = (self.storyboard?.instantiateViewController(withIdentifier: "PlaySavedSoundViewController"))! as UIViewController
         self.navigationController?.pushViewController(nextViewController, animated: true)
-
+        
     }
-
-
+    
+    
 }

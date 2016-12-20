@@ -17,12 +17,10 @@ class TemplateViewController: UIViewController {
     @IBOutlet weak var anchor: UIButton!
     @IBOutlet weak var ghost: UIButton!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         scaleButton()
     }
-    
     
     @IBAction func buttonPushed (sender: UIButton) {
         let checkButtonName = sender.restorationIdentifier!
@@ -41,7 +39,7 @@ class TemplateViewController: UIViewController {
         DispatchQueue.main.async { () -> Void in
             self.performSegue(withIdentifier: "ButtonSegue", sender: UIButton.self)
         }
-
+        
     }
     
     // to stop button images from squishing
@@ -53,5 +51,5 @@ class TemplateViewController: UIViewController {
         anchor.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         ghost.imageView?.contentMode = UIViewContentMode.scaleAspectFit
     }
-
+    
 }

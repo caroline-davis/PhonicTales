@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,7 +19,7 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
     var text: String = ""
     var selectedStory = ""
     
- 
+    
     // play func for sounds
     func play(synthesizer: AVSpeechSynthesizer, button: UIButton) {
         if !synthesizer.isSpeaking {
@@ -38,7 +38,7 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
             button.setImage(image, for: .normal)
             synthesizer.pauseSpeaking(at: AVSpeechBoundary.word)
         }
- 
+        
     }
     
     // stop func for sounds
@@ -64,7 +64,6 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
         sender.present(alertController, animated: true, completion: nil)
     }
     
-
     
     // shared instance singleton
     class func sharedInstance() -> Convenience {
@@ -73,7 +72,7 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
         }
         return Singleton.sharedInstance
     }
-
+    
     
     //story template text and questions
     var storyTemplates = [
@@ -119,47 +118,47 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
                 "Name an emotion",
                 "Type an action verb"]
         ],
-    "Food": [
-        "text": "It was nearly <0>s birthday and he decided to have a party at the new themed restaurant, <1> for tea. Little <0> was turning <2> so this was a big deal for everyone in <0>S family. His sister <3> was <4> and had never eaten <1> before so she was really <5> about the party. It was the day of the party and all <0>s <6> friends arrived. They were wearing <7> party hats and were throwing streamers,. <0> was so excited he screamed 'its my birthday and I'm eating <1> for <8>'! The waiters brought out <0>S <1> and he sat there and stared at it,. <3> said what are you looking at?, and <0> replied ‘I cant eat this!, I can see its <9> eyes, looking at me.' <3> was confused. There were no eyes on the <1>,. <3> ate the <1> and said, ‘No need to worry now, Its in my belly’,. <0> looked at <3> and screamed. She had become the <1>.",
-        "questions": [
-            "Type in a male name",
-            "Name a type of food",
-            "Type in a number",
-            "Type in a female name",
-            "Name another number",
-            "Type an emotion",
-            "Name a sport",
-            "Name a colour",
-            "Type in a meal time",
-            "Small, Medium or Large?"]
+        "Food": [
+            "text": "It was nearly <0>s birthday and he decided to have a party at the new themed restaurant, <1> for tea. Little <0> was turning <2> so this was a big deal for everyone in <0>S family. His sister <3> was <4> and had never eaten <1> before so she was really <5> about the party. It was the day of the party and all <0>s <6> friends arrived. They were wearing <7> party hats and were throwing streamers,. <0> was so excited he screamed 'its my birthday and I'm eating <1> for <8>'! The waiters brought out <0>S <1> and he sat there and stared at it,. <3> said what are you looking at?, and <0> replied ‘I cant eat this!, I can see its <9> eyes, looking at me.' <3> was confused. There were no eyes on the <1>,. <3> ate the <1> and said, ‘No need to worry now, Its in my belly’,. <0> looked at <3> and screamed. She had become the <1>.",
+            "questions": [
+                "Type in a male name",
+                "Name a type of food",
+                "Type in a number",
+                "Type in a female name",
+                "Name another number",
+                "Type an emotion",
+                "Name a sport",
+                "Name a colour",
+                "Type in a meal time",
+                "Small, Medium or Large?"]
         ],
-    "Ghost": [
-        "text": "It was half past <0> when <1> heard a weird noise coming from the attic. The house was always full of <2> noises, but this one seemed distinctively odd,. Bubble bubble bubble, went the noise. <1> lay in bed wondering if it was a <3> or maybe even a ghost? <1> went to investigate, put on her brand new <4> slippers and creeped upstairs. Bubble bubble bubble, went the sound. a GHOST like air swept the staircase and <1> began to feel rather <5>. She peeped through the door and saw something move. She nervously crept inside and saw a <6> pot bubbling away. <1> heard a whisper, she screamed 'ahhhhh a ghost is in my house'. She ran downstairs as <7> as she could and heard a <8> chuckle behind her. She heard a familiar voice say 'Are you sure you don’t want some stew, <1>'. It was <1>S grandmother <9>, she forgot she had moved in the day before. 'Oh sure gran, as long as its not frogs legs'.",
-        "questions": [
-            "Type in a number",
-            "Type in a female name",
-            "Name an adjective",
-            "Name an animal",
-            "Type in a colour",
-            "Describe the weather",
-            "Small, Medium or Large?",
-            "Name a speed",
-            "Type in an adjective",
-            "Type in female name"]
+        "Ghost": [
+            "text": "It was half past <0> when <1> heard a weird noise coming from the attic. The house was always full of <2> noises, but this one seemed distinctively odd,. Bubble bubble bubble, went the noise. <1> lay in bed wondering if it was a <3> or maybe even a ghost? <1> went to investigate, put on her brand new <4> slippers and creeped upstairs. Bubble bubble bubble, went the sound. a GHOST like air swept the staircase and <1> began to feel rather <5>. She peeped through the door and saw something move. She nervously crept inside and saw a <6> pot bubbling away. <1> heard a whisper, she screamed 'ahhhhh a ghost is in my house'. She ran downstairs as <7> as she could and heard a <8> chuckle behind her. She heard a familiar voice say 'Are you sure you don’t want some stew, <1>'. It was <1>S grandmother <9>, she forgot she had moved in the day before. 'Oh sure gran, as long as its not frogs legs'.",
+            "questions": [
+                "Type in a number",
+                "Type in a female name",
+                "Name an adjective",
+                "Name an animal",
+                "Type in a colour",
+                "Describe the weather",
+                "Small, Medium or Large?",
+                "Name a speed",
+                "Type in an adjective",
+                "Type in female name"]
         ],
-    "Fight": [
-        "text": "In the kingdom of <0> there was a prince named <1>. The prince fell ill from a witches spell and was asleep for <2> hours. To wake the prince from his slumber, a strange <3> was to be plucked from a <4> mountain in the sky. The princes warriors, <5> and Rocky set off on a voyage to obtain the <3>. Only a mile from the kingdom the warriors were met with <6> bandits. The bandits wanted to steal <5>S golden <7>. The bandits had weapons of all sorts, swords, hammers, <8>s, you name it they had it. Rocky was a fine swordsman and beat the bandits up one by one and saved <5>S <7>. The two continued their journey, plucked the <3> and came back to the kingdom. The queen went to use the <3> on her son, however, the prince would not wake up! The <3> had died! Rocky stamped his feet in despair and 'BOING' the Prince jumped high off his <9> bed. Apparently Rocky's <7> was magical, and they didn't need the <3> after all.",
-        "questions":[
-            "Name a town",
-            "Type in a male name",
-            "Type in a number",
-            "Name a vegetable",
-            "Small, Medium or Large?",
-            "Type in another name",
-            "Type in another number",
-            "Name an item of clothing",
-            "Name a cooking utensil",
-            "Type in an adjective"]
+        "Fight": [
+            "text": "In the kingdom of <0> there was a prince named <1>. The prince fell ill from a witches spell and was asleep for <2> hours. To wake the prince from his slumber, a strange <3> was to be plucked from a <4> mountain in the sky. The princes warriors, <5> and Rocky set off on a voyage to obtain the <3>. Only a mile from the kingdom the warriors were met with <6> bandits. The bandits wanted to steal <5>S golden <7>. The bandits had weapons of all sorts, swords, hammers, <8>s, you name it they had it. Rocky was a fine swordsman and beat the bandits up one by one and saved <5>S <7>. The two continued their journey, plucked the <3> and came back to the kingdom. The queen went to use the <3> on her son, however, the prince would not wake up! The <3> had died! Rocky stamped his feet in despair and 'BOING' the Prince jumped high off his <9> bed. Apparently Rocky's <7> was magical, and they didn't need the <3> after all.",
+            "questions":[
+                "Name a town",
+                "Type in a male name",
+                "Type in a number",
+                "Name a vegetable",
+                "Small, Medium or Large?",
+                "Type in another name",
+                "Type in another number",
+                "Name an item of clothing",
+                "Name a cooking utensil",
+                "Type in an adjective"]
         ]
     ]
     
