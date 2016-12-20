@@ -8,6 +8,8 @@
 
 
 import UIKit
+import FacebookCore
+import FacebookLogin
 
 class HomeViewController: UIViewController {
     
@@ -28,11 +30,18 @@ class HomeViewController: UIViewController {
         homeBarButton.isEnabled = false
         
         // Adding right logout button to nav bar
-        let rightUIBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: nil)
+        let rightUIBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout(sender:)))
         self.navigationItem.rightBarButtonItem  = rightUIBarButtonItem
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        
     }
     
-    
+    func logout(sender:UIBarButtonItem) {
+        LoginManager().logOut()
+        print("logged out")
+        DispatchQueue.main.async { () -> Void in
+            self.presentingViewController!.dismiss(animated: true, completion: nil)
+        }
+    }
     
 }

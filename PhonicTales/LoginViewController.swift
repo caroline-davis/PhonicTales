@@ -15,6 +15,9 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func addAuthButton() {
         if AccessToken.current == nil {
             
             // code for fb button design
@@ -31,7 +34,7 @@ class LoginViewController: UIViewController {
             myLoginButton.center = CGPoint(x: buttonWidth / 2, y: buttonHeight - 80);
             myLoginButton.titleLabel!.font = UIFont(name: "Helvetica Bold", size: 16)
             
-             // get user to login to the fb via the fb button
+            // get user to login to the fb via the fb button
             myLoginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
             view.addSubview(myLoginButton)
             
@@ -43,6 +46,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        addAuthButton()
         if AccessToken.current != nil {
             // print(AccessToken.current?.authenticationToken)
             // if user is logged in, use current 'accessToken' and go to home view controller
@@ -62,7 +66,7 @@ class LoginViewController: UIViewController {
             case .success(let grantedPermissions, let declinedPermissions, let accessToken):
                 print("Logged in!")
                 self.completeLogin()
-                }
+            }
         }
     }
     

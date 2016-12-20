@@ -4,6 +4,9 @@
 <dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>fbshareextension</string>
+		<string>fb-messenger-api</string>
+		<string>fbapi</string>
 		<string>fbauth2</string>
 	</array>
 	<key>CFBundleURLTypes</key>

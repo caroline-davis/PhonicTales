@@ -64,6 +64,8 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
         sender.present(alertController, animated: true, completion: nil)
     }
     
+
+    
     // shared instance singleton
     class func sharedInstance() -> Convenience {
         struct Singleton {
@@ -82,12 +84,12 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
                 "Type in a name?",
                 "What is your favourite food?",
                 "Name an adjective",
-                "Type in an item of clothing",
-                "Name an action verb",
-                "Type in a different animal",
+                "Name an item of clothing",
+                "Type in an action verb",
+                "Type in another animal",
                 "Name an object",
                 "Type in a number",
-                "Name a different action verb"]
+                "Name another action verb"]
         ],
         "Ship": [
             "text": "It was the year  <0> and Mr <1> was setting out on his first voyage across the ocean. He was getting ready for his journey alongside his friend <2> who needed to get to <3> for a wedding. The wedding was costume themed, so Mr <1> was dressing up as a <4> and <2> as a <5>. The two had never been to <3> before, but were keen to set sail. The ship was called the <6> of the sea and was bright <7>.  As the ship began to leave the shore, a <8>  <9> jumped out of the water and began thrashing about in the sea. The <9> was wreaking havoc as the ships crew tried to steer the ship away from the gigantic waves. However, the <9> was too strong and the ship ended up getting pushed back to the dock. Disappointed, Mr <1> and <2> stepped off the ship and back onto land, A lady called out to them with a telegram. It said 'Do not come to <3>, the wedding has been cancelled. The groom went fishing and was eaten by a giant <9>'. Mr <1> and <2> couldn’t believe it, went back to shore and ate <9> for dinner.",
@@ -120,16 +122,16 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
     "Food": [
         "text": "It was nearly <0>s birthday and he decided to have a party at the new themed restaurant, <1> for tea. Little <0> was turning <2> so this was a big deal for everyone in <0>S family. His sister <3> was <4> and had never eaten <1> before so she was really <5> about the party. It was the day of the party and all <0>s <6> friends arrived. They were wearing <7> party hats and were throwing streamers,. <0> was so excited he screamed 'its my birthday and I'm eating <1> for <8>'! The waiters brought out <0>S <1> and he sat there and stared at it,. <3> said what are you looking at? and <0> replied ‘I cant eat this! I can see its <9> eyes, looking at me.' <3> was confused. There were no eyes on the <1>,. <3> ate the <1> and said ‘No need to worry now, Its in my belly’,. <0> looked at <3> and screamed. She had become the <1>.",
         "questions": [
-            "Type in a boys name",
+            "Type in a male name",
             "Name a type of food",
             "Type in a number",
-            "Type in a girls name",
+            "Type in a female name",
             "Name another number",
-            "Type in an emotion",
+            "Type an emotion",
             "Name a sport",
             "Name a colour",
             "Type in a meal time",
-            "Name a size"]
+            "Small, Medium or Large?"]
         ],
     "Ghost": [
         "text": "It was half past <0> when <1> heard a weird noise coming from the attic. The house was always full of <2> noises, but this one seemed distinctively odd,. Bubble bubble bubble, went the noise. <1> lay in bed wondering if it was a <3> or maybe even a ghost? <1> went to investigate, put on her brand new <4> slippers and creeped upstairs. Bubble bubble bubble, went the sound. a GHOST like air swept the staircase and <1> began to feel rather <5>. She peeped through the door and saw something move. She nervously crept inside and saw a <6> pot bubbling away. <1> heard a whisper, she screamed 'ahhhhh a ghost is in my house'. She ran downstairs as <7> as she could and heard a <8> chuckle behind her. She heard a familiar voice say 'Are you sure you don’t want some stew, <1>'. It was <1>S grandmother <9>, she forgot she had moved in the day before. 'Oh sure gran, as long as its not frogs legs'.",
@@ -154,7 +156,7 @@ class Convenience: UIViewController, AVSpeechSynthesizerDelegate {
             "Name a vegetable",
             "Small, Medium or Large?",
             "Type in another name",
-            "Type in a different number",
+            "Type in another number",
             "Name an item of clothing",
             "Name a cooking utensil",
             "Type in an adjective"]
