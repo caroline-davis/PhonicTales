@@ -1,7 +1,7 @@
 # Phonic Tales
 
 ## Description:
-An app that generates personalised stories through a madlibs style questionaire. The stories are then saved and played via sound by the user on demand.
+An app that generates personalised stories through a madlibs style questionnaire. The stories are then saved and played via sound by the user on demand.
 
 Uses the Facebook API. Built with Swift 3.0
 
